@@ -1,0 +1,29 @@
+.advantages {
+  background-color: $grey;
+}
+
+.advantages__container {
+  @include container;
+}
+
+.advantages__list {
+  @include list-style;
+}
+
+.advantages__heading {
+  font-size: 18px;
+  line-height: inherit;
+  font-weight: 700;
+  text-align: center;
+}
+
+.advantages__text {
+  font-size: 14px;
+  color: $dark-blu-sky;
+  text-align: center;
+}
+
+.advantages__image-phone {
+  display: block;
+  margin: 0 auto;
+}

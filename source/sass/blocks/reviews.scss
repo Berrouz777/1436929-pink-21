@@ -1,0 +1,18 @@
+.reviews__list {
+  @include list-style;
+}
+
+.reviews__name {
+  font-style: normal;
+  font-size: inherit;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: center; //Почему не работает?
+}
+
+.reviews__text {
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark-blu-sky;
+  text-align: center;
+}

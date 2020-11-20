@@ -1,0 +1,33 @@
+.price {
+  background-color: $grey;
+}
+
+.price__heading {
+  background-color: $dark-blu-sky;
+}
+
+.price__title {
+  margin: 0;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.price__number {
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+  color: $white;
+  text-align: center;
+}
+
+.price__discription {
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark-blu-sky;
+  text-transform: uppercase;
+}

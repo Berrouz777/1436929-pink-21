@@ -2,13 +2,16 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
     <header class="header">
-      <div class="header__container">
-        <nav class="header__nav nav">
+      <nav class="header__nav nav">
+        <div class="nav__container">
           <a class="nav__logo">
             <img src="img/pink.svg" width="74" height="23" alt="Логотип PINK">
           </a>
@@ -27,28 +30,31 @@
               <a href="">HTML Academy</a>
             </li>
           </ul>
-        </nav>
+        </div>
+      </nav>
+      <div class="header__container">
         <h1 class="visually-hidden">Приложение &laquo;Pink&raquo;</h1>
-        <p class="header_slogan">Взгляните на жизнь иначе!</p>
-        <a class="header__button-download" href="" download=""></a>
+        <p class="header__slogan">Взгляните на жизнь иначе!</p>
+        <img class="header__img" src="https://via.placeholder.com/320x286" width="320" height="286" alt="Рука, держащая телефон с розовым экраном">
+        <a class="header__button-download" href="" download="">Скачать приложение</a>
         <ul class="header__icons-list">
           <li class="header__icons-item">
-            <img src="https://via.placeholder.com/47x56">
+            <img src="https://via.placeholder.com/47x56" alt="Иконка iPhone">
           </li>
           <li class="header__icons-item">
-            <img src="https://via.placeholder.com/43x47">
+            <img src="https://via.placeholder.com/43x47" alt="Иконка Android">
           </li>
           <li class="header__icons-item">
-            <img src="https://via.placeholder.com/44x41">
+            <img src="https://via.placeholder.com/44x41" alt="Иконка Windows Phone">
           </li>
         </ul>
         <p class="header__info">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </header>
     <main class="main">
-      <div class="slogan">
-        <p class="slogan__text">Устали от серости мегаполиса?</p>
-        <p class="slogan__text">Нам есть, что вам<br>предложить!</p>
+      <div class="main-slogan">
+        <p class="main-slogan__text">Устали от серости мегаполиса?</p>
+        <p class="main-slogan__text">Нам есть, что вам<br>предложить!</p>
       </div>
       <section class="advantages">
         <div class="advantages__container">
@@ -67,7 +73,7 @@
               <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-          <img class="advantages__image-phone" src="https://via.placeholder.com/157x320">
+          <img class="advantages__image-phone" src="https://via.placeholder.com/157x320" alt="Телефон с надписью на экране: 'Всем привет!'">
         </div>
       </section>
 
@@ -108,7 +114,7 @@
           <dl class="price__list slider__list">
             <div class="price__item slider__item">
               <dt class="price__heading">
-                <h3 class="price__title">База</h3>
+                <p class="price__title">База</p>
                 <p class="price__number">1,99 USD</p>
               </dt>
               <dd class="price__discription">Розовый фильтр</dd>
@@ -117,7 +123,7 @@
             </div>
             <div class="price__item slider__item">
               <dt class="price__heading">
-                <h3 class="price__title">Стандарт</h3>
+                <p class="price__title">Стандарт</p>
                 <p class="price__number">3,99 USD</p>
               </dt>
               <dd class="price__discription">Розовый фильтр</dd>
@@ -126,7 +132,7 @@
             </div>
             <div class="price__item slider__item">
               <dt class="price__heading">
-                <h3 class="price__title">Анлим</h3>
+                <p class="price__title">Анлим</p>
                 <p class="price__number">9,99 USD</p>
               </dt>
               <dd class="price__discription">Розовый фильтр</dd>
@@ -145,8 +151,7 @@
       <section class="info">
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="info__container">
-          <p class="info__slogan">Остались вопросы?</p>
-          <p class="info__slogan">Свяжитесь с нами!</p>
+          <p class="info__slogan">Остались вопросы?<br>Свяжитесь с нами!</p>
           <ul class="info__list">
             <li class="info__item">
               <p class="info__title">Звоните:</p>

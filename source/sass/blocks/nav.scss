@@ -1,0 +1,21 @@
+.nav {
+  padding: 19px 0;
+}
+
+.nav__container {
+  @include container;
+}
+
+.nav__item a {
+  display: block;
+  line-height: 32px;
+  font-weight: bold;
+  color: $white;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.nav__list {
+  @include list-style;
+}

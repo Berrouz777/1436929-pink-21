@@ -1,0 +1,12 @@
+.main-slogan {
+  @include container;
+}
+
+.main-slogan__text {
+  height: 100%;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  color: $dark-blu-sky;
+  text-align: center;
+}

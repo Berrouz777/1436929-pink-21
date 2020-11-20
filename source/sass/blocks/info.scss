@@ -1,0 +1,28 @@
+.info__slogan {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  color: $dark-blu-sky;
+  text-align: center;
+}
+
+.info__list {
+  @include list-style;
+}
+
+.info__title {
+  font-size: inherit;
+  line-height: 25px;
+  font-weight: 700;
+  color: $dark-blu-sky;
+  text-align: center;
+}
+
+.info__discription {
+  display: block;
+  font-size: 24px;
+  line-height: 33px;
+  color: $pink;
+  text-decoration: none;
+  text-align: center;
+}

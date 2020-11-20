@@ -1,0 +1,61 @@
+.header {
+  color: $white;
+  background-color: $dark-blu-sky-dif;
+  background-image: url("../img/back-mobile.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.header__container {
+  @include container;
+}
+
+.header__nav {
+  background-color: transparentize($color: $black, $amount: 0.3);
+}
+
+.header__slogan {
+  margin: 0;
+  margin-top: 29px;
+  font-size: 24px;
+  line-height: 120%;
+  font-weight: 300;
+  text-align: center;
+}
+
+.header__img {
+  margin-left: -20px;
+  margin-top: 34px;
+}
+
+.header__button-download {
+  width: 100%;
+  display: block;
+  margin-top: 28px;
+  margin-bottom: 38px;
+  padding: 21px;
+  line-height: 18px;
+  font-weight: bold;
+  color: $white;
+  border: 3px solid $white;
+  border-radius: 35px;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.header__icons-list {
+  @include list-style;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__info {
+  margin-top: 31px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
