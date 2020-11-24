@@ -2,8 +2,15 @@
   background-color: $grey;
 }
 
+.price__item:nth-child(2),
+.price__item:nth-child(3) {
+  display: none;
+}
+
 .price__heading {
   background-color: $dark-blu-sky;
+  padding-top: 14px;
+  padding-bottom: 35px;
 }
 
 .price__title {
@@ -26,8 +33,22 @@
 }
 
 .price__discription {
+  @include container;
+  margin: 0;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  display: block;
+  border-bottom: 2px solid $very-light-shade-grey-dif2;
   font-size: 14px;
   line-height: 30px;
   color: $dark-blu-sky;
+  background-color: $white;
   text-transform: uppercase;
+}
+
+.price__toggles {
+  @include container;
+  padding-top: 45px;
+  padding-bottom: 49px;
+  text-align: center;
 }

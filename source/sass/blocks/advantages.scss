@@ -8,9 +8,15 @@
 
 .advantages__list {
   @include list-style;
+  padding-top: 86px;
+}
+
+.advantages__item {
+  padding-top: 43px;
 }
 
 .advantages__heading {
+  margin: 0;
   font-size: 18px;
   line-height: inherit;
   font-weight: 700;
@@ -18,6 +24,7 @@
 }
 
 .advantages__text {
+  margin-top: 15px;
   font-size: 14px;
   color: $dark-blu-sky;
   text-align: center;
@@ -26,4 +33,5 @@
 .advantages__image-phone {
   display: block;
   margin: 0 auto;
+  margin-top: 48px;
 }
