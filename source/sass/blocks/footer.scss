@@ -1,0 +1,18 @@
+.footer__container {
+  @include container;
+}
+
+.footer__logo {
+  display: block;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.footer__socials {
+  @include list-style;
+  margin-top: 41px;
+}
+
+.footer__copyright {
+  margin-top: 41px;
+}

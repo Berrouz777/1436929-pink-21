@@ -1,2 +1,12 @@
-body {
-    background: orange;
+@import "global/variables.scss";
+@import "global/page.scss";
+@import "global/visually-hidden.scss";
+@import "blocks/header.scss";
+@import "blocks/nav.scss";
+@import "blocks/main-slogan.scss";
+@import "blocks/advantages.scss";
+@import "blocks/reviews.scss";
+@import "blocks/price.scss";
+@import "blocks/info.scss";
+@import "blocks/footer.scss";
+@import "blocks/copyright.scss";
