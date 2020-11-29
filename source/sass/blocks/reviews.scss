@@ -1,5 +1,9 @@
 .reviews__container {
   @include container;
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
+  }
 }
 
 .reviews__list {
@@ -7,7 +11,8 @@
 }
 
 .reviews__list blockquote {
-  display: block;
+  display: flex;
+  flex-direction: column;
   margin: 0;
 }
 
@@ -23,7 +28,24 @@
   font-size: inherit;
   line-height: 30px;
   font-weight: bold;
-  text-align: center; //Почему не работает?
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.reviews__info {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    order: 3;
+    font-size: 14px;
+    line-height: 30px;
+    color: $dark-blu-sky;
+    text-align: center;
+  }
 }
 
 .reviews__text {

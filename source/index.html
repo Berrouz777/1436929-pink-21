@@ -35,7 +35,10 @@
       <div class="header__container">
         <h1 class="visually-hidden">Приложение &laquo;Pink&raquo;</h1>
         <p class="header__slogan">Взгляните на жизнь иначе!</p>
-        <img class="header__img" src="https://via.placeholder.com/320x286" width="320" height="286" alt="Рука, держащая телефон с розовым экраном">
+        <div class="header__image">
+          <img class="header__image-head" src="img/phone.png" width="320" height="286" alt="Рука, держащая телефон">
+          <img class="header__image-screen" src="img/screen.png" width="111" height="197" alt="Розовый экран телефона">
+        </div>
         <a class="header__button-download" href="" download="">Скачать приложение</a>
         <ul class="header__icons-list">
           <li class="header__icons-item">
@@ -61,19 +64,35 @@
           <h2 class="visually-hidden">Польза приложения</h2>
           <ul class="advantages__list">
             <li class="advantages__item">
+              <img class="advantages__img" src="https://via.placeholder.com/186x382">
               <h3 class="advantages__heading">Поднимает настроение</h3>
               <p class="advantages__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="advantages__item">
+              <img class="advantages__img" src="https://via.placeholder.com/186x382">
               <h3 class="advantages__heading">Меняет мир вокруг</h3>
               <p class="advantages__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="advantages__item">
+              <img class="advantages__img" src="https://via.placeholder.com/186x382">
               <h3 class="advantages__heading">Заводит новых друзей</h3>
               <p class="advantages__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-          <img class="advantages__image-phone" src="https://via.placeholder.com/157x320" alt="Телефон с надписью на экране: 'Всем привет!'">
+        </div>
+      </section>
+
+      <section class="effect">
+        <div class="effect__container">
+          <div class="effect__diagram">
+            <img src="https://via.placeholder.com/238x276" width="238" height="276">
+            <!-- <p class="effect__diagram-number">24</p> -->
+          </div>
+          <div class="effect__text">
+            <p class="effect__text-heading">Эффект<br> на 24 часа!</p>
+            <p class="effect__text-fact">Британские ученые провели исследования и доказали, что положительный эффект от иследования приложения длится целые сутки!</p>
+            <a class="effect__text-link" href="">Узнать больше об исследовании</a>
+          </div>
         </div>
       </section>
 
@@ -84,18 +103,21 @@
             <li class="reviews__item slider__item">
               <blockquote>
                 <cite class="reviews__name">Николай Петров</cite>
+                <p class="reviews__info">25 лет, водитель трамвая</p>
                 <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по нового взглянуть на привычные серые вещи! А ещё я познакомился со своей будующей женой в комментариях к выложенной фотографии!&raquo;</p>
               </blockquote>
             </li>
             <li class="reviews__item slider__item">
               <blockquote>
                 <cite class="reviews__name">Константин Соболев</cite>
+                <p class="reviews__info">25 лет, водитель трамвая</p>
                 <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по нового взглянуть на привычные серые вещи! А ещё я познакомился со своей будующей женой в комментариях к выложенной фотографии!&raquo;</p>
               </blockquote>
             </li>
             <li class="reviews__item slider__item">
               <blockquote>
                 <cite class="reviews__name">Анатолий Болейко</cite>
+                <p class="reviews__info">25 лет, водитель трамвая</p>
                 <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по нового взглянуть на привычные серые вещи! А ещё я познакомился со своей будующей женой в комментариях к выложенной фотографии!&raquo;</p>
               </blockquote>
             </li>
@@ -163,7 +185,7 @@
             </li>
             <li class="info__item">
               <p class="info__title">Приезжайте в гости:</p>
-              <a class="info__discription" href="#">ул. Большая Конюшенная, 19/8</a>
+              <a class="info__discription" href="#">ул. Большая<br> Конюшенная, 19/8</a>
             </li>
           </ul>
         </div>
@@ -175,20 +197,20 @@
         <a class="footer__logo">
           <img src="https://via.placeholder.com/145x40">
         </a>
-        <ul class="footer__socials socials">
-          <li class="socials__item">
+        <ul class="footer__socials-list">
+          <li class="footer__socials-item">
             <a href="#">Twitter</a>
           </li>
-          <li class="socials__item">
+          <li class="footer__socials-item">
             <a href="#">Facebook</a>
           </li>
-          <li class="socials__item">
+          <li class="footer__socials-item">
             <a href="#">Youtube</a>
           </li>
         </ul>
-        <div class="footer__copyright copyright">
-          <p class="copyright__text">Разработано:</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <div class="footer__copyright">
+          <p class="footer__copyright-text">Разработано:</p>
+          <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive">
             <img src="https://via.placeholder.com/27x34">
           </a>
         </div>

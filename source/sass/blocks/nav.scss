@@ -4,6 +4,51 @@
 
 .nav__container {
   @include container;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
+    align-items: center;
+    min-height: 110px;
+  }
+}
+
+.nav__logo {
+  display: block;
+
+  @media (min-width: $desktop-width) {
+    width: 147px;
+  }
+}
+
+.nav__toggle {
+  display: block;
+  margin-left: auto;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.nav__list {
+  @include list-style;
+  display: none;
+  // width: 100%;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.nav__item {
+  @media (min-width: $desktop-width) {
+    margin-right: 79px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .nav__item a {
@@ -14,8 +59,10 @@
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
-}
 
-.nav__list {
-  @include list-style;
+  @media (min-width: $desktop-width) {
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: none;
+  }
 }
