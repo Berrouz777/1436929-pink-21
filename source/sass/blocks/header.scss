@@ -8,6 +8,17 @@
 
 .header__container {
   @include container;
+  padding-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
+  }
 }
 
 .header__nav {
@@ -16,24 +27,44 @@
 
 .header__slogan {
   margin: 0;
-  margin-top: 29px;
+  padding: 0;
+  margin-top: 18px;
   font-size: 24px;
   line-height: 120%;
   font-weight: 300;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
 }
 
-.header__img {
+.header__image {
+  position: relative;
+  width: 100%;
   margin-left: -20px;
   margin-top: 34px;
+
+  &-screen {
+    position: absolute;
+    top: 33px;
+    left: 104px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    grid-column: 2/3;
+    grid-row: 1/-1;
+  }
 }
 
 .header__button-download {
   width: 100%;
   display: block;
-  margin-top: 28px;
+  margin-top: 25px;
   margin-bottom: 38px;
-  padding: 21px;
+  padding: 18px;
   line-height: 18px;
   font-weight: bold;
   color: $white;
@@ -42,6 +73,11 @@
   text-decoration: none;
   text-align: center;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
 }
 
 .header__icons-list {
@@ -49,6 +85,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
 }
 
 .header__info {
@@ -57,5 +98,10 @@
   line-height: 24px;
   font-weight: 300;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
 }
 

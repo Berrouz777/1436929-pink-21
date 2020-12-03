@@ -8,9 +8,17 @@ $pink: #d22856;
 $very-light-shade-grey: #dedede;
 $very-light-shade-grey-dif: #efefef;
 $very-light-shade-grey-dif2: #e5e5e5;
+//viewports
+$mobile-width: 320px;
+$tablet-width: 660px;
+$desktop-width: 1200px;
 //mixin
 @mixin container {
   padding: 0 20px;
+}
+
+@mixin container-desktop {
+  padding: 0 130px;
 }
 
 @mixin list-style {

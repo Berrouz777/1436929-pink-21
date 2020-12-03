@@ -1,10 +1,81 @@
+@mixin font-size {
+  margin: 0;
+  padding-top: 14px;
+  padding-bottom: 15px;
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark-blu-sky;
+}
+
 .price {
   background-color: $grey;
 }
 
-.price__item:nth-child(2),
-.price__item:nth-child(3) {
+.price__list {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    @include container;
+  }
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
+  }
+}
+
+.price__item {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: table-cell;
+    width: 20%;
+    background-color: $white;
+
+    &-name {
+      display: none;
+    }
+
+    &-icon {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  &--active {
+    @include container;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: $white;
+    // outline: 1px solid black;
+
+    @media (min-width: $tablet-width) {
+      display: table-cell;
+      width: 20%;
+    }
+
+    .price__item-name {
+      display: block;
+      text-transform: uppercase;
+
+      @include font-size;
+
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
+  }
+}
+
+.price__empty {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: table-cell;
+  }
 }
 
 .price__heading {
@@ -14,6 +85,7 @@
 }
 
 .price__title {
+  width: 100%;
   margin: 0;
   font-size: 16px;
   line-height: 30px;
@@ -24,6 +96,7 @@
 }
 
 .price__number {
+  width: 100%;
   margin: 0;
   font-size: 18px;
   line-height: 30px;
@@ -34,16 +107,15 @@
 
 .price__discription {
   @include container;
-  margin: 0;
-  padding-top: 14px;
-  padding-bottom: 15px;
-  display: block;
-  border-bottom: 2px solid $very-light-shade-grey-dif2;
-  font-size: 14px;
-  line-height: 30px;
-  color: $dark-blu-sky;
+  display: none;
   background-color: $white;
-  text-transform: uppercase;
+
+  @include font-size;
+
+  @media (min-width: $tablet-width) {
+    display: table-cell;
+    width: 20%;
+  }
 }
 
 .price__toggles {
