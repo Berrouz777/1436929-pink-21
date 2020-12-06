@@ -4,6 +4,31 @@
   background-image: url("../img/back-mobile.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
+  background-size: 100% 462px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 729px;
+    background-image: url("../img/back-tablet.jpg");
+    background-size: 100% 729px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 853px;
+    background-image: url("../img/back-desktop.jpg");
+    background-size: 100% 853px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
+  }
 }
 
 .header__container {
@@ -37,33 +62,70 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     grid-row: 1/2;
+    margin-top: 102px;
   }
 }
 
 .header__image {
   position: relative;
-  width: 100%;
-  margin-left: -20px;
-  margin-top: 34px;
+  width: 300px;
+  height: 286px;
+  margin: 34px auto 0 auto;
+
+  &-head {
+    position: relative;
+    z-index: 2;
+    margin-left: -20px;
+  }
 
   &-screen {
     position: absolute;
+    z-index: 1;
     top: 33px;
-    left: 104px;
+    left: 85px;
   }
 
   @media (min-width: $tablet-width) {
-    margin-left: 0;
+    position: absolute;
+    width: 660px;
+    height: 545px;
+    margin-top: 67px;
+    right: 0;
     grid-column: 2/3;
     grid-row: 1/-1;
+
+    &-head {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &-screen {
+      width: 195px;
+      height: 396px;
+      top: 50px;
+      left: 372px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    height: 645px;
+
+    &-screen {
+      width: 230px;
+      height: 408px;
+      top: 65px;
+      left: 572px;
+    }
   }
 }
 
 .header__button-download {
   width: 100%;
+  max-width: 300px;
   display: block;
-  margin-top: 25px;
-  margin-bottom: 38px;
+  margin: 25px auto 38px auto;
   padding: 18px;
   line-height: 18px;
   font-weight: bold;
@@ -90,6 +152,10 @@
     grid-column: 1/2;
     grid-row: 3/4;
   }
+}
+
+.header__icons-item:not(:last-child) {
+  margin-right: 35px;
 }
 
 .header__info {

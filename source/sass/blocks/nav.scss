@@ -16,9 +16,15 @@
 
 .nav__logo {
   display: block;
+  outline: 1px solid pink;
 
-  @media (min-width: $desktop-width) {
-    width: 147px;
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+
+    img {
+      width: 145px;
+      height: 40px;
+    }
   }
 }
 
