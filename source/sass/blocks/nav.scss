@@ -1,5 +1,5 @@
 .nav {
-  padding: 19px 0;
+  padding: 20px 0 18px 0;
 }
 
 .nav__container {
@@ -16,7 +16,6 @@
 
 .nav__logo {
   display: block;
-  outline: 1px solid pink;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 33px;
@@ -31,6 +30,11 @@
 .nav__toggle {
   display: block;
   margin-left: auto;
+  height: 4px;
+  width: 50px;
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0 12px 0 0 $white, 0 22px 0 0 $white;
 
   @media (min-width: $desktop-width) {
     display: none;

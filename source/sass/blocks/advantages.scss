@@ -6,7 +6,7 @@
 .advantages__container {
   @include container;
   position: relative;
-  padding-bottom: 325px;
+  // padding-bottom: 305px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 41px;
@@ -16,14 +16,14 @@
     @include container-desktop;
   }
 
-  &::after {
+  /*&::after {
     content: "";
     position: absolute;
     bottom: -43px;
     left: 25.6%;
     width: 157px;
     height: 320px;
-    background-image: url("https://via.placeholder.com/157x320");
+    background-image: url("../../img/iphone-advantages.png"), url("../../img/screen-hello.jpg");
 
     @media (min-width: $tablet-width) {
       left: 20px;
@@ -35,12 +35,12 @@
     @media (min-width: $desktop-width) {
       display: none;
     }
-  }
+  }*/
 }
 
 .advantages__list {
   @include list-style;
-  padding-top: 86px;
+  padding-top: 46px;
 
   @media (min-width: $tablet-width) {
     order: 2;
@@ -58,6 +58,14 @@
 .advantages__item {
   padding-top: 43px;
 
+  &:nth-child(2) {
+    padding-top: 17px;
+  }
+
+  &:last-child {
+    padding-top: 18px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: column;
@@ -71,7 +79,7 @@
   }
 }
 
-.advantages__img {
+.advantages__item-img {
   display: none;
 
   @media (min-width: $desktop-width) {
@@ -80,7 +88,7 @@
   }
 }
 
-.advantages__heading {
+.advantages__item-heading {
   margin: 0;
   font-size: 18px;
   line-height: inherit;
@@ -92,8 +100,8 @@
   }
 }
 
-.advantages__text {
-  margin-top: 15px;
+.advantages__item-text {
+  margin-top: 11px;
   font-size: 14px;
   color: $dark-blu-sky;
   text-align: center;
@@ -104,5 +112,23 @@
 
   @media (min-width: $desktop-width) {
     text-align: center;
+  }
+}
+
+.advantages__img {
+  display: block;
+  position: relative;
+  width: 157px;
+  height: 320px;
+  margin: 42px auto -43px auto;
+
+  &-phone {
+    position: absolute;
+  }
+
+  &-screen {
+    position: absolute;
+    top: 36px;
+    left: 9px;
   }
 }
