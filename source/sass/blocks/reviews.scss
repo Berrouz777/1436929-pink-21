@@ -1,5 +1,6 @@
 .reviews__container {
   @include container;
+  padding-bottom: 60px;
 
   @media (min-width: $desktop-width) {
     @include container-desktop;
@@ -58,9 +59,5 @@
 }
 
 .reviews__toggles {
-  display: block;
-  // margin: 20px auto 60px auto;
-  margin-top: 20px;
-  margin-bottom: 60px;
-  text-align: center;
+  margin: 32px auto 0 auto;
 }

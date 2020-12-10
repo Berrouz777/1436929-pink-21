@@ -1,5 +1,6 @@
 .info__container {
   @include container;
+  margin-top: 40px;
 
   @media (min-width: $desktop-width) {
     @include container-desktop;
@@ -9,7 +10,6 @@
 .info__slogan {
   font-size: 24px;
   line-height: 120%;
-  margin-top: 47px;
   font-weight: 300;
   color: $dark-blu-sky;
   text-align: center;
@@ -28,7 +28,16 @@
 }
 
 .info__item {
-  margin-bottom: 31px;
+  margin-top: 10px;
+  // margin-bottom: 31px;
+
+  &:nth-child(2) {
+    margin-top: 16px;
+  }
+
+  &:last-child {
+    margin-top: 22px;
+  }
 
   @media (min-width: $tablet-width) {
     &:first-child,

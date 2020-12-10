@@ -9,6 +9,7 @@
 
 .price {
   background-color: $grey;
+  margin-top: 75px;
 }
 
 .price__list {
@@ -25,6 +26,17 @@
 
 .price__item {
   display: none;
+
+  &-name {
+    padding-left: 18px;
+    border-left: 2px solid $very-light-shade-grey-dif2;
+  }
+
+  &-icon {
+    height: 58px;
+    padding-right: 18px;
+    border-right: 2px solid $very-light-shade-grey-dif2;
+  }
 
   @media (min-width: $tablet-width) {
     display: table-cell;
@@ -81,7 +93,7 @@
 .price__heading {
   background-color: $dark-blu-sky;
   padding-top: 14px;
-  padding-bottom: 35px;
+  padding-bottom: 28px;
 }
 
 .price__title {
@@ -98,6 +110,7 @@
 .price__number {
   width: 100%;
   margin: 0;
+  margin-top: -2px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 300;
@@ -120,7 +133,7 @@
 
 .price__toggles {
   @include container;
-  padding-top: 45px;
+  padding-top: 40px;
   padding-bottom: 49px;
-  text-align: center;
+  margin: 0 auto;
 }
