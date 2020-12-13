@@ -17,14 +17,30 @@
 .nav__logo {
   display: block;
 
+  &-glasses {
+    display: none;
+  }
+
+  &-pink {
+    fill: $white;
+  }
+
   @media (min-width: $tablet-width) {
+    &-glasses {
+      display: inline;
+      fill: $white;
+      margin-right: 12px;
+    }
+  }
+
+  /*@media (min-width: $tablet-width) {
     margin-bottom: 33px;
 
     img {
       width: 145px;
       height: 40px;
     }
-  }
+  }*/
 }
 
 .nav__toggle {
