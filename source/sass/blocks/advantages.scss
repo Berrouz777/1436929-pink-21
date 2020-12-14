@@ -6,45 +6,24 @@
 .advantages__container {
   @include container;
   position: relative;
-  // padding-bottom: 305px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 41px;
+    display: flex;
+    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     @include container-desktop;
   }
-
-  /*&::after {
-    content: "";
-    position: absolute;
-    bottom: -43px;
-    left: 25.6%;
-    width: 157px;
-    height: 320px;
-    background-image: url("../../img/iphone-advantages.png"), url("../../img/screen-hello.jpg");
-
-    @media (min-width: $tablet-width) {
-      left: 20px;
-      width: 268px;
-      height: 547px;
-      background-image: url("https://via.placeholder.com/268x547");
-    }
-
-    @media (min-width: $desktop-width) {
-      display: none;
-    }
-  }*/
 }
 
 .advantages__list {
   @include list-style;
-  padding-top: 46px;
+  padding-top: 40px;
 
   @media (min-width: $tablet-width) {
     order: 2;
-    padding-left: 310px;
+    margin-left: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -120,15 +99,15 @@
   position: relative;
   width: 157px;
   height: 320px;
-  margin: 42px auto -43px auto;
+  margin: 10px auto -43px auto;
 
-  &-phone {
-    position: absolute;
-  }
+  @media (min-width: $tablet-width) {
+    width: 268px;
+    height: 547px;
 
-  &-screen {
-    position: absolute;
-    top: 36px;
-    left: 9px;
+    &-phone {
+      width: 268px;
+      height: 100%;
+    }
   }
 }

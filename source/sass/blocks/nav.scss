@@ -1,5 +1,9 @@
 .nav {
   padding: 20px 0 18px 0;
+
+  @media(min-width: $tablet-width) {
+    padding: 27px 0 13px 0;
+  }
 }
 
 .nav__container {
@@ -7,10 +11,13 @@
   display: flex;
   justify-content: space-between;
 
+  @media (min-width: $tablet-width) {
+    min-height: 70px;
+  }
+
   @media (min-width: $desktop-width) {
     @include container-desktop;
     align-items: center;
-    min-height: 110px;
   }
 }
 
@@ -29,7 +36,7 @@
     &-glasses {
       display: inline;
       fill: $white;
-      margin-right: 12px;
+      margin-right: 8px;
     }
   }
 
@@ -50,7 +57,11 @@
   width: 50px;
   border: none;
   border-radius: 2px;
-  box-shadow: 0 12px 0 0 $white, 0 22px 0 0 $white;
+  box-shadow: 0 10px 0 0 $white, 0 20px 0 0 $white;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 16px;
+  }
 
   @media (min-width: $desktop-width) {
     display: none;
@@ -60,7 +71,6 @@
 .nav__list {
   @include list-style;
   display: none;
-  // width: 100%;
 
   @media (min-width: $desktop-width) {
     display: flex;

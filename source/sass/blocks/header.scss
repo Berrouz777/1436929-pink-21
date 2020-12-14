@@ -37,8 +37,9 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 300px 1fr;
     grid-template-rows: repeat(4, auto);
+    grid-column-gap: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,18 +52,26 @@
 }
 
 .header__slogan {
-  margin: 0;
+  margin: 22px 0 0 0;
   padding: 0;
-  margin-top: 22px;
   font-size: 24px;
   line-height: 120%;
   font-weight: 300;
   text-align: center;
 
+  br:first-child {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     grid-row: 1/2;
-    margin-top: 102px;
+    margin-top: 93px;
+    font-size: 40px;
+
+    br:first-child {
+      display: block;
+    }
   }
 }
 
@@ -89,7 +98,7 @@
     position: absolute;
     width: 660px;
     height: 545px;
-    margin-top: 67px;
+    margin-top: 74px;
     right: 0;
     grid-column: 2/3;
     grid-row: 1/-1;
@@ -102,7 +111,7 @@
 
     &-screen {
       width: 195px;
-      height: 396px;
+      height: 348px;
       top: 50px;
       left: 372px;
     }
@@ -122,9 +131,10 @@
 }
 
 .header__button-download {
+  display: block;
+  position: relative;
   width: 100%;
   max-width: 300px;
-  display: block;
   margin: 28px auto 35px auto;
   padding: 15px;
   line-height: 18px;
@@ -139,18 +149,24 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     grid-row: 2/3;
+    z-index: 3;
+    margin-top: 32px;
+    padding: 15px 20px;
   }
 }
 
 .header__icons-list {
   @include list-style;
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     grid-row: 3/4;
+    margin-top: 12px;
+    z-index: 3;
   }
 }
 
@@ -175,8 +191,12 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: 3;
     grid-column: 1/2;
     grid-row: 4/5;
+    font-size: 18px;
+    margin-top: 28px;
   }
 }
 
