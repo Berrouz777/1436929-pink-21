@@ -9,6 +9,10 @@
 
 .reviews__list {
   @include list-style;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 85px;
+  }
 }
 
 .reviews__list blockquote {
@@ -26,13 +30,14 @@
   display: inline-block;
   margin-top: 41px;
   font-style: normal;
-  font-size: inherit;
+  font-size: 18px;
   line-height: 30px;
   font-weight: bold;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     order: 2;
+    font-size: 20px;
   }
 }
 
@@ -46,6 +51,7 @@
     line-height: 30px;
     color: $dark-blu-sky;
     text-align: center;
+    margin: 0;
   }
 }
 
@@ -56,6 +62,10 @@
   line-height: 30px;
   color: $dark-blu-sky;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .reviews__toggles {
