@@ -19,6 +19,7 @@
   display: block;
   margin-top: 33px;
   text-align: center;
+  // outline: 1px solid black;
 
   &-glasses {
     fill: $pink;
@@ -28,6 +29,10 @@
   &-pink {
     fill: $dark-blu-sky;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-top: -15px;
+  }
 }
 
 .footer__socials-list {
@@ -35,6 +40,12 @@
   display: flex;
   flex-wrap: wrap;
   margin-top: 35px;
+  // outline: 1px solid black;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -5px;
+    margin-left: -10px;
+  }
 }
 
 .footer__socials-item {
@@ -66,9 +77,18 @@
   justify-content: center;
   margin-bottom: 45px;
   margin-top: 35px;
+  // outline: 1px solid black;
 
   .htmlacademy {
     fill: $pink;
+  }
+
+  @media(min-width: $tablet-width) {
+    margin-top: 40px;
+
+    .htmlacademy {
+      padding-top: 5px;
+    }
   }
 }
 

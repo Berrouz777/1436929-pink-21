@@ -2,6 +2,10 @@
   @include container;
   margin-top: 40px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 45px;
+  }
+
   @media (min-width: $desktop-width) {
     @include container-desktop;
   }
@@ -11,8 +15,18 @@
   font-size: 24px;
   line-height: 120%;
   font-weight: 300;
+  margin: 0;
   color: $dark-blu-sky;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: auto;
+
+    &:nth-child(2) {
+      margin-top: 5px;
+    }
+  }
 }
 
 .info__list {
@@ -20,6 +34,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  margin-top: 25px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -29,7 +44,6 @@
 
 .info__item {
   margin-top: 10px;
-  // margin-bottom: 31px;
 
   &:nth-child(2) {
     margin-top: 16px;
@@ -43,11 +57,13 @@
     &:first-child,
     &:nth-child(2) {
       width: 50%;
-      margin-bottom: 55px;
+      margin-bottom: 45px;
+      margin-top: 15px;
     }
 
     &:last-child {
       width: 100%;
+      margin-top: 0;
     }
   }
 
@@ -90,4 +106,10 @@
 .info__map {
   display: block;
   margin: 35px auto 5px auto;
+
+  @media(min-width: $tablet-width) {
+    margin: 25px auto 5px auto;
+    width: 660px;
+    height: 374px;
+  }
 }
