@@ -73,6 +73,12 @@
       display: block;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: auto;
+    margin-top: 105px;
+  }
 }
 
 .header__image {
@@ -120,6 +126,8 @@
   @media (min-width: $desktop-width) {
     width: 1050px;
     height: 645px;
+    margin-top: 98px;
+    right: 5px;
 
     &-screen {
       width: 230px;
