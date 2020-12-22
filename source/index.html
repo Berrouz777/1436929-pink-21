@@ -48,6 +48,9 @@
         <path d="M211.314 81.628l4.273-4.287c6.165-6.175 7.291-15.148 2.499-19.94-4.792-4.79-13.752-3.678-19.91 2.496l-4.305 4.311a118.265 118.265 0 00-59.684-25.578v-7.67h6.118c8.714 0 15.846-6.966 15.846-15.476 0-8.51-7.132-15.484-15.846-15.484H97.721c-8.714 0-15.846 6.966-15.846 15.484S89.008 30.96 97.722 30.96h6.118v7.67a118.935 118.935 0 00-69.052 34A119.238 119.238 0 00.946 141.836a119.313 119.313 0 0015.518 75.474 119.047 119.047 0 0058.389 50.187 118.839 118.839 0 0076.847 3.916 118.988 118.988 0 0063.175-43.991 119.28 119.28 0 0023.089-73.506 119.27 119.27 0 00-26.65-72.287zm-92.301 163.319a87.901 87.901 0 01-48.884-14.85 88.092 88.092 0 01-32.407-39.546 88.23 88.23 0 01-5.006-50.911A88.153 88.153 0 0156.8 94.524a87.95 87.95 0 0145.053-24.113 87.87 87.87 0 0150.838 5.017 88.012 88.012 0 0139.486 32.457 88.197 88.197 0 0114.825 48.956 88.177 88.177 0 01-25.774 62.301 87.923 87.923 0 01-62.214 25.805z" fill="#DEDEDE"/>
         <circle cx="119" cy="157" r="93" stroke="#D22856" stroke-width="16"/>
       </symbol>
+      <symbol id="quotes" vieBox="0 0 79 63">
+        <path d="M35.147 6.973L30.839 0C28.389 1.481 0 12.059 0 39.13 0 46.27.341 63 18.98 63c11.236 0 13.998-10.153 13.998-13.422 0-21.727-21.47-13.994-21.47-13.994 0-17.807 19.883-26.518 23.639-28.611zM79 6.973L74.732 0c-2.43 1.481-30.849 12.059-30.849 39.13 0 7.14.342 23.87 18.99 23.87C74.1 63 76.86 52.847 76.86 49.578c0-21.727-21.47-13.994-21.47-13.994C55.391 17.777 75.315 9.066 79 6.973z" fill="#EFEFEF"/>
+      </symbol>
     </svg>
 
     <header class="header">
@@ -121,19 +124,19 @@
           <h2 class="visually-hidden">Польза приложения</h2>
           <ul class="advantages__list">
             <li class="advantages__item">
-              <img class="advantages__item-img" src="https://via.placeholder.com/186x382">
+              <img class="advantages__item-img" src="img/advantages-1.png" srcset="img/advantages-1@2x.png 2x" width="186" height="382" alt="Телефон с серым экраном и мусоркой на картинке">
               <h3 class="advantages__item-heading">Поднимает настроение</h3>
-              <p class="advantages__item-text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              <p class="advantages__item-text">Приложение позволит вам победить осеннюю хандру и&nbsp;депрессию буквально в несколько кликов!</p>
             </li>
             <li class="advantages__item">
-              <img class="advantages__item-img" src="https://via.placeholder.com/186x382">
+              <img class="advantages__item-img" src="img/advantages-2.png" srcset="img/advantages-2@2x.png 2x" width="186" height="382" alt="Телефон с розовым экраном и мусоркой на картинке">
               <h3 class="advantages__item-heading">Меняет мир вокруг</h3>
-              <p class="advantages__item-text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
+              <p class="advantages__item-text">Сделайте снимок и <br class="br-1">украсьте его смайликом<br class="br-2"> или текстовой подписью,<br class="br-4"> чтобы<br class="br-5"> усилить&nbsp;эффект</p>
             </li>
             <li class="advantages__item">
-              <img class="advantages__item-img" src="https://via.placeholder.com/186x382">
-              <h3 class="advantages__item-heading">Заводит новых друзей</h3>
-              <p class="advantages__item-text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              <img class="advantages__item-img" src="img/advantages-3.png" srcset="img/advantages-3@2x.png 2x" width="186" height="382" alt="Телефон с розовым экраном и надписью &laquo;Всем привет!&raquo;">
+              <h3 class="advantages__item-heading">Заводит<br> новых друзей</h3>
+              <p class="advantages__item-text">Ставьте лайки,<br class="br-6"> комментируйте, делитесь фотографиями с друзьями <br class="br-7">и заводите новых</p>
             </li>
           </ul>
           <div class="advantages__img">
@@ -148,14 +151,17 @@
       <section class="effect">
         <div class="effect__container">
           <div class="effect__diagram">
-            <svg class="effect__diagram-timer" width="238" height="276">
+            <svg class="effect__diagram-tablet" width="238" height="276">
+              <use xlink:href="#timer"></use>
+            </svg>
+            <svg class="effect__diagram-desktop" width="298" height="345">
               <use xlink:href="#timer"></use>
             </svg>
             <p class="effect__diagram-number">24</p>
           </div>
           <div class="effect__text">
             <p class="effect__text-heading">Эффект<br> на 24 часа!</p>
-            <p class="effect__text-fact">Британские ученые провели исследования и&nbsp;доказали, что положительный эффект от&nbsp;использования приложения длится целые&nbsp;сутки!</p>
+            <p class="effect__text-fact">Британские ученые провели исследования и&nbsp;доказали,<br> что положительный эффект от&nbsp;использования приложения длится целые&nbsp;сутки!</p>
             <a class="effect__text-link" href="">Узнать больше об исследовании</a>
           </div>
         </div>
@@ -167,23 +173,32 @@
           <ul class="reviews__list slider__list">
             <li class="reviews__item slider__item">
               <blockquote>
-                <cite class="reviews__name">Николай Петров</cite>
-                <p class="reviews__info">25 лет, водитель трамвая</p>
-                <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
+                <svg class="reviews__item-svg" width="79" height="63">
+                  <use xlink:href="#quotes"></use>
+                </svg>
+                <cite class="reviews__item-name">Николай Петров</cite>
+                <p class="reviews__item-info">25 лет, водитель трамвая</p>
+                <p class="reviews__item-text">&laquo;Это приложение перевернуло мой мир и позволило по новому взглянуть на привычные серые вещи! А ещё я познакомился со своей будущей женой в комментариях к выложенной фотографии!&raquo;</p>
               </blockquote>
             </li>
             <li class="reviews__item slider__item">
               <blockquote>
-                <cite class="reviews__name">Константин Соболев</cite>
-                <p class="reviews__info">25 лет, водитель трамвая</p>
-                <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по нового взглянуть на привычные серые вещи! А ещё я познакомился со своей будующей женой в комментариях к выложенной фотографии!&raquo;</p>
+                <svg class="reviews__item-svg" width="79" height="63">
+                  <use xlink:href="#quotes"></use>
+                </svg>
+                <cite class="reviews__item-name">Константин Соболев</cite>
+                <p class="reviews__item-info">25 лет, водитель трамвая</p>
+                <p class="reviews__item-text">&laquo;Это приложение перевернуло мой мир и позволило по нового взглянуть на привычные серые вещи! А ещё я познакомился со своей будующей женой в комментариях к выложенной фотографии!&raquo;</p>
               </blockquote>
             </li>
             <li class="reviews__item slider__item">
               <blockquote>
-                <cite class="reviews__name">Анатолий Болейко</cite>
-                <p class="reviews__info">25 лет, водитель трамвая</p>
-                <p class="reviews__text">&laquo;Это приложение перевернуло мой мир и позволило по нового взглянуть на привычные серые вещи! А ещё я познакомился со своей будующей женой в комментариях к выложенной фотографии!&raquo;</p>
+                <svg class="reviews__item-svg" width="79" height="63">
+                  <use xlink:href="#quotes"></use>
+                </svg>
+                <cite class="reviews__item-name">Анатолий Болейко</cite>
+                <p class="reviews__item-info">25 лет, водитель трамвая</p>
+                <p class="reviews__item-text">&laquo;Это приложение перевернуло мой мир и позволило по нового взглянуть на привычные серые вещи! А ещё я познакомился со своей будующей женой в комментариях к выложенной фотографии!&raquo;</p>
               </blockquote>
             </li>
           </ul>

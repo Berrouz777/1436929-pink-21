@@ -17,14 +17,29 @@
 
   @media (min-width: $desktop-width) {
     @include container-desktop;
+    margin-top: 0;
+    padding-top: 50px;
+    padding-bottom: 68px;
   }
 }
 
 .effect__diagram {
   display: block;
   position: relative;
-  width: 238px;
-  height: 276px;
+
+  &-desktop {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    &-tablet {
+      display: none;
+    }
+
+    &-desktop {
+      display: block;
+    }
+  }
 }
 
 .effect__diagram-number {
@@ -35,11 +50,21 @@
   line-height: 163px;
   font-weight: bold;
   color: $pink;
+
+  @media (min-width: $desktop-width) {
+    font-size: 120px;
+    top: -8px;
+    left: 82px;
+  }
 }
 
 .effect__text {
   margin-left: 72px;
   margin-top: 42px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 92px;
+  }
 }
 
 .effect__text-heading {
@@ -59,12 +84,33 @@
   font-size: 14px;
   line-height: 24px;
   color: $dark-blu-sky;
-  margin-top: 8px;
+  margin-top: 10px;
+
+  br {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 26px;
+
+    br {
+      display: inline;
+    }
+  }
 }
 
 .effect__text-link {
+  display: inline-block;
   font-size: 14px;
   line-height: 24px;
   color: $pink;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 10px;
+  }
 }
 

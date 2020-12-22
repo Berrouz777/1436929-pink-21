@@ -5,6 +5,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 65px;
+  }
 }
 
 .main-slogan__text {
@@ -26,6 +30,14 @@
 
     &:last-child {
       margin: 5px 0 35px 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+
+    &:last-child {
+      line-height: 130%;
     }
   }
 }

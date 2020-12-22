@@ -8,6 +8,7 @@
 
   @media (min-width: $desktop-width) {
     @include container-desktop;
+    margin-top: 62px;
   }
 }
 
@@ -25,6 +26,14 @@
 
     &:nth-child(2) {
       margin-top: 5px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+
+    &:nth-child(2) {
+      margin-top: 10px;
     }
   }
 }

@@ -13,6 +13,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 85px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 72px;
+  }
 }
 
 .reviews__list blockquote {
@@ -26,7 +30,20 @@
   display: none;
 }
 
-.reviews__name {
+.reviews__item {
+  margin: 0 126px;
+}
+
+.reviews__item-svg {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.reviews__item-name {
   display: inline-block;
   margin-top: 41px;
   font-style: normal;
@@ -39,9 +56,14 @@
     order: 2;
     font-size: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    margin-top: 38px;
+  }
 }
 
-.reviews__info {
+.reviews__item-info {
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -53,9 +75,13 @@
     text-align: center;
     margin: 0;
   }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
 }
 
-.reviews__text {
+.reviews__item-text {
   margin: 0;
   margin-top: 15px;
   font-size: 14px;
@@ -65,6 +91,10 @@
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 50px;
   }
 }
 
