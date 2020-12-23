@@ -13,7 +13,7 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
-    padding-top: 50px;
+    padding-top: 55px;
     padding-bottom: 70px;
   }
 
@@ -68,6 +68,7 @@
       margin: 0 auto;
       border: 0;
       height: 35px;
+      padding-left: 15px;
       // outline: 1px solid black;
     }
 
@@ -178,7 +179,7 @@
   @media (min-width: $tablet-width) {
     display: table-cell;
     width: 20%;
-    padding: 7px 0 7px 13px;
+    padding: 7px 0 7px 15px;
     border: 3px solid $very-light-shade-grey-dif2;
   }
 

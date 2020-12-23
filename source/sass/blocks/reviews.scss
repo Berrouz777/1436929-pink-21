@@ -11,7 +11,7 @@
   @include list-style;
 
   @media (min-width: $tablet-width) {
-    margin-top: 85px;
+    margin-top: 80px;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,7 +31,9 @@
 }
 
 .reviews__item {
-  margin: 0 126px;
+  @media (min-width: $desktop-width) {
+    margin: 0 126px;
+  }
 }
 
 .reviews__item-svg {
@@ -55,6 +57,7 @@
   @media (min-width: $tablet-width) {
     order: 2;
     font-size: 20px;
+    margin-top: 37px;
   }
 
   @media (min-width: $desktop-width) {

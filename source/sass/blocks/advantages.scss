@@ -78,7 +78,7 @@
     position: relative;
     clip-path: inset(0 0 21.2% 0);
 
-    /*&::after {
+    &::after {
       content: "434444444444444444444";
       position: absolute;
       width: 308px;
@@ -88,7 +88,7 @@
       background-image: url("../../img/shadow.png");
       background-repeat: no-repeat;
       background-position: 0 50%;
-    }*/
+    }
   }
 }
 
