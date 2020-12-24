@@ -1,0 +1,24 @@
+.slider__toggles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60px;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.slider__toggle {
+  width: 3px;
+  height: 3px;
+  padding: 3px;
+  border: none;
+  border-radius: 50%;
+  background-color: lighten($dark-blu-sky, 30%);
+
+  &--active {
+    border: 3px solid $dark-blu-sky;
+    background-color: transparent;
+  }
+}

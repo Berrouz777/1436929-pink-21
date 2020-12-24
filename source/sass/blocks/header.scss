@@ -4,16 +4,42 @@
   background-image: url("../img/back-mobile.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
+  background-size: 100% 462px;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 729px;
+    background-image: url("../img/back-tablet.jpg");
+    background-size: 100% 729px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 853px;
+    background-image: url("../img/back-desktop.jpg");
+    background-size: 100% 853px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
+  }
 }
 
 .header__container {
   @include container;
-  padding-bottom: 28px;
+  padding-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 300px 1fr;
     grid-template-rows: repeat(4, auto);
+    grid-column-gap: 40px;
   }
 
   @media (min-width: $desktop-width) {
@@ -22,49 +48,103 @@
 }
 
 .header__nav {
-  background-color: transparentize($color: $black, $amount: 0.3);
+  background-color: transparentize($color: $black, $amount: 0.7);
 }
 
 .header__slogan {
-  margin: 0;
+  margin: 22px 0 0 0;
   padding: 0;
-  margin-top: 18px;
   font-size: 24px;
   line-height: 120%;
   font-weight: 300;
   text-align: center;
 
+  br:first-child {
+    display: none;
+  }
+
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     grid-row: 1/2;
+    margin-top: 93px;
+    font-size: 40px;
+
+    br:first-child {
+      display: block;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 130%;
+    margin-top: 105px;
   }
 }
 
 .header__image {
   position: relative;
-  width: 100%;
-  margin-left: -20px;
-  margin-top: 34px;
+  width: 300px;
+  height: 286px;
+  margin: 30px auto 0 auto;
+
+  &-head {
+    position: relative;
+    z-index: 2;
+    margin-left: -20px;
+  }
 
   &-screen {
     position: absolute;
+    z-index: 1;
     top: 33px;
-    left: 104px;
+    left: 85px;
   }
 
   @media (min-width: $tablet-width) {
-    margin-left: 0;
+    position: absolute;
+    width: 660px;
+    height: 545px;
+    margin-top: 74px;
+    right: 0;
     grid-column: 2/3;
     grid-row: 1/-1;
+
+    &-head {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &-screen {
+      width: 195px;
+      height: 348px;
+      top: 50px;
+      left: 372px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1050px;
+    height: 645px;
+    margin-top: 98px;
+    right: 5px;
+
+    &-screen {
+      width: 230px;
+      height: 408px;
+      top: 65px;
+      left: 572px;
+    }
   }
 }
 
 .header__button-download {
-  width: 100%;
   display: block;
-  margin-top: 25px;
-  margin-bottom: 38px;
-  padding: 18px;
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+  margin: 28px auto 35px auto;
+  padding: 15px;
   line-height: 18px;
   font-weight: bold;
   color: $white;
@@ -77,31 +157,67 @@
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     grid-row: 2/3;
+    z-index: 3;
+    margin-top: 32px;
+    padding: 15px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    margin-top: 40px;
   }
 }
 
 .header__icons-list {
   @include list-style;
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
 
   @media (min-width: $tablet-width) {
     grid-column: 1/2;
     grid-row: 3/4;
+    margin-top: 12px;
+    z-index: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 35px;
+  }
+}
+
+.header__icons-item {
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+    margin-top: 5px;
+  }
+
+  &:first-child {
+    margin-top: -2px;
   }
 }
 
 .header__info {
-  margin-top: 31px;
+  margin-top: 15px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    z-index: 3;
     grid-column: 1/2;
     grid-row: 4/5;
+    font-size: 18px;
+    margin-top: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 47px;
   }
 }
 
