@@ -1,0 +1,41 @@
+@mixin fieldset-none {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.form__container {
+  @include container;
+}
+
+.form__your-name,
+.form__progress,
+.form__contacts,
+.form__app,
+.form__emotion {
+  @include fieldset-none;
+}
+
+.form__button {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  background-color: $green;
+  color: $white;
+  padding: 23px 0;
+  text-transform: uppercase;
+}
+
+.form__legend {
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark-blu-sky;
+  text-transform: uppercase;
+
+  &::first-letter {
+    color: $pink;
+  }
+}

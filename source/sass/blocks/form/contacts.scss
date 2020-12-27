@@ -1,0 +1,33 @@
+.contacts {
+  @include container;
+}
+
+.contacts__title {
+  display: none;
+}
+
+.contacts__list {
+  @include list-style;
+}
+
+.contacts__item {
+  display: flex;
+  flex-direction: column;
+
+  &-name {
+    font-size: 14px;
+    line-height: 30px;
+    color: $pink;
+    text-transform: uppercase;
+  }
+
+  &-text {
+    font-size: 18px;
+    line-height: 30px;
+
+    &::placeholder {
+      font-family: "Open Sans", "Arial", sans-serif;
+      color: $dark-blu-sky;
+    }
+  }
+}

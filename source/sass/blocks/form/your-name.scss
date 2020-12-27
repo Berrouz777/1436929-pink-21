@@ -1,0 +1,29 @@
+.your-name {
+  @include container;
+}
+
+.your-name__list {
+  @include list-style;
+}
+
+.your-name__item {
+  display: flex;
+  flex-direction: column;
+
+  &-name {
+    font-size: 14px;
+    line-height: 30px;
+    color: $pink;
+    text-transform: uppercase;
+  }
+
+  &-text {
+    font-size: 18px;
+    line-height: 30px;
+
+    &::placeholder {
+      font-family: "Open Sans", "Arial", sans-serif;
+      color: $dark-blu-sky;
+    }
+  }
+}
