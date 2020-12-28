@@ -45,6 +45,10 @@
   @media (min-width: $desktop-width) {
     @include container-desktop;
   }
+
+  &-form {
+    @include container;
+  }
 }
 
 .header__nav {
@@ -218,6 +222,18 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 47px;
+  }
+}
+
+.header__text {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 300;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
   }
 }
 

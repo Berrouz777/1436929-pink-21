@@ -1,0 +1,29 @@
+.progress {
+  background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+}
+
+.progress__container {
+  @include container;
+}
+
+.progress__list {
+  @include list-style;
+}
+
+.progress__title {
+  font-size: 14px;
+  line-height: 18px;
+  color: $pink;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.progress__name {
+  font-size: 18px;
+  line-height: 30px;
+  color: $dark-blu-sky;
+}

@@ -1,0 +1,29 @@
+.app {
+  background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    background-color: $white;
+  }
+}
+
+.app__container {
+  @include container;
+}
+
+.app__title {
+  font-size: 14px;
+  line-height: 18px;
+  color: $pink;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.app__list {
+  @include list-style;
+}
+
+.app__name {
+  font-size: 18px;
+  line-height: 30px;
+  color: $dark-blu-sky;
+}

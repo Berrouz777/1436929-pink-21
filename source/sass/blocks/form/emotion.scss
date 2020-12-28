@@ -1,0 +1,23 @@
+.emotion {
+  @include container;
+}
+
+.emotion__title {
+  font-size: 14px;
+  line-height: 18px;
+  color: $pink;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.emotion__text {
+  font-size: 18px;
+  line-height: 30px;
+  width: 100%;
+  box-sizing: border-box;
+
+  &::placeholder {
+    font-family: "Open Sans", "Arial", sans-serif;
+    color: $dark-blu-sky;
+  }
+}
