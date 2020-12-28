@@ -4,16 +4,85 @@
   margin: 0;
 }
 
-.form__container {
-  @include container;
+.form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  flex-wrap: wrap;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
-.form__your-name,
-.form__progress,
-.form__contacts,
-.form__app,
+.form__your-name {
+  @include fieldset-none;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 35%;
+  }
+}
+
+.form__progress {
+  @include fieldset-none;
+
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.form__contacts {
+  @include fieldset-none;
+
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.form__app {
+  @include fieldset-none;
+
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 35%;
+  }
+}
+
 .form__emotion {
   @include fieldset-none;
+
+  @media (min-width: $tablet-width) {
+    order: 5;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
+}
+
+.form__container {
+  @include container;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    order: 6;
+  }
 }
 
 .form__button {
@@ -27,6 +96,10 @@
   color: $white;
   padding: 23px 0;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+  }
 }
 
 .form__legend {

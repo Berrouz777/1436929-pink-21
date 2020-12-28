@@ -8,10 +8,50 @@
 
 .progress__container {
   @include container;
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
+  }
 }
 
 .progress__list {
   @include list-style;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.progress__item {
+  @media (min-width: $desktop-width) {
+    width: 33%;
+    text-align: center;
+
+    &:first-child {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 4;
+    }
+
+    &:nth-child(3) {
+      order: 2;
+    }
+
+    &:nth-child(4) {
+      order: 5;
+    }
+
+    &:nth-child(5) {
+      order: 3;
+    }
+
+    &:last-child {
+      order: 6;
+    }
+  }
 }
 
 .progress__title {

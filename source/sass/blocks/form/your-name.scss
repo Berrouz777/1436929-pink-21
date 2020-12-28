@@ -1,5 +1,9 @@
 .your-name {
   @include container;
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
+  }
 }
 
 .your-name__list {
@@ -24,6 +28,18 @@
     &::placeholder {
       font-family: "Open Sans", "Arial", sans-serif;
       color: $dark-blu-sky;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+
+    &-name {
+      margin-right: 20px;
+    }
+
+    &-text {
+      width: 100%;
     }
   }
 }

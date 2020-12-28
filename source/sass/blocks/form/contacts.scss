@@ -1,5 +1,9 @@
 .contacts {
   @include container;
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
+  }
 }
 
 .contacts__title {
@@ -8,6 +12,11 @@
 
 .contacts__list {
   @include list-style;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-around;
+  }
 }
 
 .contacts__item {
