@@ -22,10 +22,18 @@
   color: $pink;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 31px;
+  }
 }
 
 .progress__list {
   @include list-style;
+
+  @media (min-width: $tablet-width) {
+    padding: 50px 62px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -34,7 +42,12 @@
 }
 
 .progress__item {
+  position: relative;
   padding-bottom: 49px;
+
+  &:last-child {
+    // padding-bottom: 0;
+  }
 
   @media (min-width: $desktop-width) {
     width: 33%;
@@ -67,8 +80,37 @@
 }
 
 .progress__name {
+  position: absolute;
   font-size: 18px;
   line-height: 30px;
   color: $dark-blu-sky;
-  padding-left: 22px;
+  padding-left: 59px;
+  padding-top: 5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    border: 2px solid $very-light-shade-grey-dif2;
+    border-radius: 2px;
+  }
+
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    width: 22px;
+    height: 16px;
+    background-image: url("../../../img/tick.svg");
+    top: 10px;
+    left: 10px;
+  }
+}
+
+.progress__checkbox:checked + label::after {
+  display: block;
 }

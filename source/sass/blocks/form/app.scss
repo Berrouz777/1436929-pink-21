@@ -6,7 +6,7 @@
   @media (min-width: $tablet-width) {
     background-color: $white;
     padding: 0;
-    margin: 0 20px;
+    margin: 30px 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,20 +21,58 @@
   text-align: center;
   text-transform: uppercase;
   padding-top: 120px;
+
+  @media (min-width: $tablet-width) {
+    padding: 14px 25px;
+  }
 }
 
 .app__list {
   @include list-style;
   padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 80px;
+  }
 }
 
 .app__item {
+  position: relative;
   padding-bottom: 40px;
 }
 
 .app__name {
+  // position: absolute;
   font-size: 18px;
   line-height: 30px;
   color: $dark-blu-sky;
-  padding-left: 31px;
+  padding-left: 61px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    top: -5px;
+    left: 0;
+    border: 2px solid $very-light-shade-grey-dif2;
+    border-radius: 50%;
+    background-color: $white;
+  }
+
+  &::after {
+    display: none;
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 8px;
+    left: 13px;
+    border-radius: 50%;
+    background-color: $pink;
+  }
+}
+
+.app__radio:checked + label::after {
+  display: block;
 }

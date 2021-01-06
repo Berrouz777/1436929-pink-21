@@ -33,7 +33,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 25%;
+    width: 35%;
+    // outline: 1px solid black;
+    padding-right: 0;
   }
 }
 
@@ -80,7 +82,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 25%;
+    width: 32%;
+    // outline: 1px solid black;
   }
 }
 
@@ -111,12 +114,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    width: 100%;
     order: 6;
+    padding-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
     @include container-desktop;
+    padding-top: 50px;
   }
 }
 

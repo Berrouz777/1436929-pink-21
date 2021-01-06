@@ -8,20 +8,26 @@
 
   @media (min-width: $tablet-width) {
     display: inline;
+    padding: 14px 31px;
   }
 }
 
 .contacts__list {
   @include list-style;
 
+  @media (min-width: $tablet-width) {
+    padding: 20px 60px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 }
 
 .contacts__item {
   display: flex;
+  position: relative;
   flex-direction: column;
   padding-top: 24px;
 
@@ -44,6 +50,23 @@
     &::placeholder {
       font-family: "Open Sans", "Arial", sans-serif;
       color: $dark-blu-sky;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    &-name {
+      order: 2;
+      padding-top: 22px;
+    }
+
+    &-text {
+      order: 1;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &-text {
+      min-width: 371px;
     }
   }
 }
