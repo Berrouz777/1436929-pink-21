@@ -18,4 +18,8 @@
       display: inline;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    @include container-desktop;
+  }
 }

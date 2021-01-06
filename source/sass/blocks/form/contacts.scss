@@ -1,13 +1,14 @@
-.contacts {
-  @include container;
-
-  @media (min-width: $desktop-width) {
-    @include container-desktop;
-  }
-}
-
 .contacts__title {
   display: none;
+  font-size: 14px;
+  line-height: 18px;
+  color: $pink;
+  text-align: center;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
 }
 
 .contacts__list {
@@ -22,17 +23,23 @@
 .contacts__item {
   display: flex;
   flex-direction: column;
+  padding-top: 24px;
 
   &-name {
     font-size: 14px;
     line-height: 30px;
     color: $pink;
     text-transform: uppercase;
+    padding-bottom: 17px;
+    padding-left: 24px;
   }
 
   &-text {
     font-size: 18px;
     line-height: 30px;
+    height: 59px;
+    border: 2px solid $very-light-shade-grey-dif2;
+    padding-left: 22px;
 
     &::placeholder {
       font-family: "Open Sans", "Arial", sans-serif;

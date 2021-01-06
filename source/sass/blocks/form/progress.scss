@@ -1,17 +1,24 @@
 .progress {
+  @include container;
   background-color: $grey;
+  margin-top: -25px;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
+    padding: 0;
+    margin: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 130px;
   }
 }
 
-.progress__container {
-  @include container;
-
-  @media (min-width: $desktop-width) {
-    @include container-desktop;
-  }
+.progress__title {
+  // display: block;
+  padding-top: 110px;
+  padding-bottom: 20px;
+  // outline: 1px solid black;
 }
 
 .progress__list {
@@ -24,6 +31,8 @@
 }
 
 .progress__item {
+  padding-bottom: 49px;
+
   @media (min-width: $desktop-width) {
     width: 33%;
     text-align: center;
@@ -66,4 +75,5 @@
   font-size: 18px;
   line-height: 30px;
   color: $dark-blu-sky;
+  padding-left: 22px;
 }

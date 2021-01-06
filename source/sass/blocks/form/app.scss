@@ -1,13 +1,17 @@
 .app {
+  @include container;
   background-color: $grey;
+  margin-top: -60px;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
+    padding: 0;
+    margin: 0 20px;
   }
-}
 
-.app__container {
-  @include container;
+  @media (min-width: $desktop-width) {
+    margin: 0 130px;
+  }
 }
 
 .app__title {
@@ -16,14 +20,21 @@
   color: $pink;
   text-align: center;
   text-transform: uppercase;
+  padding-top: 120px;
 }
 
 .app__list {
   @include list-style;
+  padding-top: 30px;
+}
+
+.app__item {
+  padding-bottom: 40px;
 }
 
 .app__name {
   font-size: 18px;
   line-height: 30px;
   color: $dark-blu-sky;
+  padding-left: 31px;
 }

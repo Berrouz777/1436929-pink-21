@@ -1,10 +1,10 @@
-.your-name {
+/*.your-name {
   @include container;
 
   @media (min-width: $desktop-width) {
     @include container-desktop;
   }
-}
+}*/
 
 .your-name__list {
   @include list-style;
@@ -13,17 +13,24 @@
 .your-name__item {
   display: flex;
   flex-direction: column;
+  padding-top: 26px;
 
   &-name {
     font-size: 14px;
     line-height: 30px;
     color: $pink;
     text-transform: uppercase;
+    padding-left: 23px;
+    padding-bottom: 17px;
   }
 
   &-text {
     font-size: 18px;
     line-height: 30px;
+    height: 59px;
+    padding-left: 20px;
+    border: 2px solid $very-light-shade-grey-dif2;
+    border-radius: 3px;
 
     &::placeholder {
       font-family: "Open Sans", "Arial", sans-serif;
