@@ -15,10 +15,13 @@
 }
 
 .progress__title {
-  // display: block;
   padding-top: 110px;
   padding-bottom: 20px;
-  // outline: 1px solid black;
+  font-size: 14px;
+  line-height: 18px;
+  color: $pink;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .progress__list {
@@ -61,14 +64,6 @@
       order: 6;
     }
   }
-}
-
-.progress__title {
-  font-size: 14px;
-  line-height: 18px;
-  color: $pink;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .progress__name {
