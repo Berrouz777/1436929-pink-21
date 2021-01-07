@@ -29,23 +29,24 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  padding-top: 24px;
+  padding-top: 15px;
 
   &-name {
     font-size: 14px;
     line-height: 30px;
     color: $pink;
     text-transform: uppercase;
-    padding-bottom: 17px;
+    padding-bottom: 5px;
     padding-left: 24px;
   }
 
   &-text {
     font-size: 18px;
     line-height: 30px;
-    height: 59px;
+    height: 53px;
+    padding-top: 5px;
     border: 2px solid $very-light-shade-grey-dif2;
-    padding-left: 22px;
+    padding-left: 20px;
 
     &::placeholder {
       font-family: "Open Sans", "Arial", sans-serif;

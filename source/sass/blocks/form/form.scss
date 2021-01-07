@@ -53,8 +53,8 @@
 }
 
 .form__container:nth-of-type(2) {  //contacts
-  padding-top: 26px;
-  padding-bottom: 40px;
+  padding-top: 19px;
+  padding-bottom: 25px;
 
   .form__contacts {
     @include fieldset-none;
@@ -88,7 +88,7 @@
 }
 
 .form__container:nth-of-type(3) {  //emotion
-  padding-top: 42px;
+  padding-top: 40px;
 
   .form__emotion {
     @include fieldset-none;
@@ -109,7 +109,8 @@
 
 .form__footer {
   @include container;
-  padding-top: 50px;
+  padding-top: 42px;
+  padding-bottom: 10px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -130,10 +131,10 @@
   font-weight: bold;
   width: 100%;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   background-color: $green;
   color: $white;
-  padding: 23px 0;
+  padding: 17px 0;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
@@ -147,6 +148,7 @@
   color: $dark-blu-sky;
   text-transform: uppercase;
   text-align: center;
+  padding-top: 20px;
 
   &::first-letter {
     color: $pink;

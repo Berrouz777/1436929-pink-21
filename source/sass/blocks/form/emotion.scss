@@ -4,7 +4,7 @@
   color: $pink;
   text-align: center;
   text-transform: uppercase;
-  padding-bottom: 22px;
+  padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     padding: 14px 38px;
@@ -17,7 +17,8 @@
   width: 100%;
   box-sizing: border-box;
   border: 2px solid $very-light-shade-grey-dif2;
-  padding: 20px;
+  padding: 15px 20px;
+  min-height: 200px;
 
   &::placeholder {
     font-family: "Open Sans", "Arial", sans-serif;

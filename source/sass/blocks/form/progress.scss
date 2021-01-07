@@ -1,7 +1,7 @@
 .progress {
   @include container;
   background-color: $grey;
-  margin-top: -25px;
+  margin-top: -50px;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
@@ -15,7 +15,7 @@
 }
 
 .progress__title {
-  padding-top: 110px;
+  padding-top: 130px;
   padding-bottom: 20px;
   font-size: 14px;
   line-height: 18px;
@@ -25,11 +25,16 @@
 
   @media (min-width: $tablet-width) {
     padding: 14px 31px;
+
+    br {
+      display: none;
+    }
   }
 }
 
 .progress__list {
   @include list-style;
+  padding-top: 20px;
 
   @media (min-width: $tablet-width) {
     padding: 50px 62px;
@@ -43,10 +48,18 @@
 
 .progress__item {
   position: relative;
-  padding-bottom: 49px;
+  padding-bottom: 80px;
+
+  &:nth-child(3) {
+    padding-top: 3px;
+  }
+
+  &:nth-child(5) {
+    padding-top: 3px;
+  }
 
   &:last-child {
-    // padding-bottom: 0;
+    padding-top: 3px;
   }
 
   @media (min-width: $desktop-width) {
@@ -90,12 +103,12 @@
   &::before {
     content: "";
     position: absolute;
-    width: 35px;
-    height: 35px;
+    width: 33px;
+    height: 33px;
     top: 0;
     left: 0;
     background-color: $white;
-    border: 2px solid $very-light-shade-grey-dif2;
+    border: 3px solid $very-light-shade-grey-dif2;
     border-radius: 2px;
   }
 
@@ -107,7 +120,7 @@
     height: 16px;
     background-image: url("../../../img/tick.svg");
     top: 10px;
-    left: 10px;
+    left: 9px;
   }
 }
 
