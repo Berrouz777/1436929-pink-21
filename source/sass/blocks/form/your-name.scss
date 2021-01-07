@@ -41,8 +41,15 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    align-items: center;
+    padding-bottom: 32px;
+
+    &:last-of-type {
+      padding-bottom: 0;
+    }
 
     &-name {
+      padding: 0;
       margin-right: 20px;
     }
 

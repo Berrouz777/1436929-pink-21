@@ -84,6 +84,10 @@
     @include container;
     padding-top: 5px;
 
+    @media (min-width: $tablet-width) {
+      padding-top: 15px;
+    }
+
     @media (min-width: $desktop-width) {
       @include container-desktop;
     }

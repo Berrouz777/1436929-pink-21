@@ -62,6 +62,7 @@
 
   @media (min-width: $tablet-width) {
     order: 3;
+    padding-bottom: 45px;
 
     .form__contacts {
       border: 2px solid $very-light-shade-grey-dif2;
@@ -96,6 +97,7 @@
 
   @media (min-width: $tablet-width) {
     order: 5;
+    padding-top: 45px;
 
     .form__emotion {
       border: 2px solid $very-light-shade-grey-dif2;
