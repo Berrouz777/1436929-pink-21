@@ -1,10 +1,10 @@
-/*.your-name {
+.your-name__container {
   @include container;
 
   @media (min-width: $desktop-width) {
-    @include container-desktop;
+    // @include container-desktop;
   }
-}*/
+}
 
 .your-name__list {
   @include list-style;
@@ -56,5 +56,9 @@
     &-text {
       width: 100%;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    // outline: 1px solid black;
   }
 }

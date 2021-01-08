@@ -1,21 +1,30 @@
 .progress {
-  @include container;
   background-color: $grey;
-  margin-top: -50px;
+  margin-top: 42px;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
-    padding: 0;
-    margin: 0 20px;
+    margin-top: 22px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 130px;
+    max-width: 960px;
+    margin: 0 auto;
+  }
+}
+
+.progress__container {
+  @include container;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: 2px solid $very-light-shade-grey-dif2;
+    margin: 0 20px;
   }
 }
 
 .progress__title {
-  padding-top: 130px;
+  padding-top: 40px;
   padding-bottom: 20px;
   font-size: 14px;
   line-height: 18px;
@@ -24,11 +33,18 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding: 14px 31px;
+    display: inline-block;
+    width: 430px;
+    background-color: $white;
+    margin: -50px auto 0 auto;
 
     br {
       display: none;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: -50px auto 0 auto;
   }
 }
 
@@ -37,7 +53,7 @@
   padding-top: 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 30px 0 8px 58px;
+    padding: 25px 0 8px 38px;
   }
 
   @media (min-width: $desktop-width) {
@@ -60,6 +76,10 @@
 
   &:last-child {
     padding-top: 3px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
   }
 
   @media (min-width: $desktop-width) {

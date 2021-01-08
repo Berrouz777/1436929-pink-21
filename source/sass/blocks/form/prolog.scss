@@ -21,6 +21,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include container-desktop;
+    @include container;
+    max-width: 920px;
+    margin: 0 auto;
   }
 }

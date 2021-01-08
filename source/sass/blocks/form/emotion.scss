@@ -1,3 +1,26 @@
+.emotion {
+  margin-top: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 960px;
+    margin: 50px auto 0 auto;
+  }
+}
+
+.emotion__container {
+  @include container;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: 2px solid $very-light-shade-grey-dif2;
+    margin: 0 20px;
+  }
+}
+
 .emotion__title {
   font-size: 14px;
   line-height: 18px;
@@ -7,7 +30,10 @@
   padding-bottom: 15px;
 
   @media (min-width: $tablet-width) {
-    padding: 14px 38px;
+    display: inline-block;
+    width: 250px;
+    background-color: $white;
+    margin: -10px auto 0 auto;
   }
 }
 
@@ -27,8 +53,8 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    margin: 23px auto 53px auto;
-    height: 180px;
+    margin: 23px auto 45px auto;
+    // height: 250px;
     width: 81%;
   }
 }

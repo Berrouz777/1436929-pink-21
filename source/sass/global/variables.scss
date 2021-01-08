@@ -12,14 +12,14 @@ $green: #2aab6d;
 //viewports
 $mobile-width: 320px;
 $tablet-width: 660px;
-$desktop-width: 1200px;
+$desktop-width: 960px;
 //mixin
 @mixin container {
   padding: 0 20px;
 }
 
 @mixin container-desktop {
-  padding: 0 130px;
+  padding: 0 20px;
 }
 
 @mixin list-style {
