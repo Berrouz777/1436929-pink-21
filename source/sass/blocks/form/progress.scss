@@ -8,8 +8,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    max-width: 960px;
+    // max-width: 920px;
     margin: 0 auto;
+    // outline: 1px solid black;
   }
 }
 
@@ -20,6 +21,11 @@
     padding: 0;
     border: 2px solid $very-light-shade-grey-dif2;
     margin: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    max-width: 920px;
   }
 }
 
@@ -64,7 +70,7 @@
 
 .progress__item {
   position: relative;
-  padding-bottom: 80px;
+  padding-bottom: 50px;
 
   &:nth-child(3) {
     padding-top: 3px;
@@ -83,7 +89,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 33%;
+    width: 30%;
     text-align: center;
 
     &:first-child {
@@ -113,7 +119,7 @@
 }
 
 .progress__name {
-  position: absolute;
+  // position: absolute;
   font-size: 18px;
   line-height: 30px;
   color: $dark-blu-sky;
@@ -141,6 +147,11 @@
     background-image: url("../../../img/tick.svg");
     top: 10px;
     left: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    // padding-left: 0;
+    // position: relative;
   }
 }
 
