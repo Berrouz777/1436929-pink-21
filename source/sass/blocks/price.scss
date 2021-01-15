@@ -18,8 +18,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 193px 130px 98px 130px;
+    padding: 193px 20px 98px 20px;
   }
+}
+
+.price__container {
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .price__list {

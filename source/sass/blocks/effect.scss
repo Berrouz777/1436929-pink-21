@@ -17,7 +17,8 @@
 
   @media (min-width: $desktop-width) {
     @include container-desktop;
-    margin-top: 0;
+    max-width: 960px;
+    margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 68px;
   }

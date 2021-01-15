@@ -1,29 +1,160 @@
 .progress {
   background-color: $grey;
+  margin-top: 42px;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
+    margin-top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    // max-width: 920px;
+    margin: 0 auto;
+    // outline: 1px solid black;
   }
 }
 
 .progress__container {
   @include container;
-}
 
-.progress__list {
-  @include list-style;
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border: 2px solid $very-light-shade-grey-dif2;
+    margin: 0 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    max-width: 920px;
+  }
 }
 
 .progress__title {
+  padding-top: 40px;
+  padding-bottom: 20px;
   font-size: 14px;
   line-height: 18px;
   color: $pink;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+    width: 430px;
+    background-color: $white;
+    margin: -50px auto 0 auto;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: -50px auto 0 auto;
+  }
+}
+
+.progress__list {
+  @include list-style;
+  padding-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 0 8px 38px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.progress__item {
+  position: relative;
+  padding-bottom: 50px;
+
+  &:nth-child(3) {
+    padding-top: 3px;
+  }
+
+  &:nth-child(5) {
+    padding-top: 3px;
+  }
+
+  &:last-child {
+    padding-top: 3px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 30%;
+    text-align: center;
+
+    &:first-child {
+      order: 1;
+    }
+
+    &:nth-child(2) {
+      order: 4;
+    }
+
+    &:nth-child(3) {
+      order: 2;
+    }
+
+    &:nth-child(4) {
+      order: 5;
+    }
+
+    &:nth-child(5) {
+      order: 3;
+    }
+
+    &:last-child {
+      order: 6;
+    }
+  }
 }
 
 .progress__name {
+  // position: absolute;
   font-size: 18px;
   line-height: 30px;
   color: $dark-blu-sky;
+  padding-left: 59px;
+  padding-top: 5px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    border: 3px solid $very-light-shade-grey-dif2;
+    border-radius: 2px;
+  }
+
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    width: 22px;
+    height: 16px;
+    background-image: url("../../../img/tick.svg");
+    top: 10px;
+    left: 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    // padding-left: 0;
+    // position: relative;
+  }
+}
+
+.progress__checkbox:checked + label::after {
+  display: block;
 }
