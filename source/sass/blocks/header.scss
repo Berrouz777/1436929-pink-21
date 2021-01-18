@@ -2,7 +2,7 @@
   color: $white;
   background-color: $dark-blu-sky-dif;
   background-image: url("../img/back-mobile.jpg");
-  background-position: 0 0px;
+  background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100% 462px;
 
@@ -39,7 +39,8 @@
     }
   }
 
-  &-form {
+  &-form,
+  &-catalog {
     // height: 237px;
     color: $white;
     background-color: $dark-blu-sky-dif;
@@ -103,7 +104,8 @@
     overflow: hidden;
   }
 
-  &-form {
+  &-form,
+  &-catalog {
     @include container;
     padding-top: 5px;
     padding-bottom: 20px;
@@ -301,6 +303,18 @@
 }
 
 .header__text {
+  font-size: 24px;
+  line-height: 33px;
+  font-weight: 300;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.header__title {
   font-size: 24px;
   line-height: 33px;
   font-weight: 300;
