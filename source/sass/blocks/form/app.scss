@@ -7,10 +7,11 @@
     background-color: $white;
     padding: 0;
     margin: 68px 20px 25px 20px;
+    border-radius: 3px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0 auto 0 55px;
+    margin: 10px auto 0 75px;
   }
 }
 
@@ -47,6 +48,7 @@
 
   @media (min-width: $desktop-width) {
     // padding: 0;
+    padding-left: 50px;
   }
 }
 

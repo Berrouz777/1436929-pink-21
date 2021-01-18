@@ -100,8 +100,11 @@
   @media (min-width: $desktop-width) {
     // @include container;
     // padding-top: 50px;
-    width: 920px;
+    max-width: 940px;
+    width: 100%;
+    // outline: 1px solid black;
     margin: 0 auto;
+    padding: 49px 0 0px 0;
   }
 }
 
@@ -121,6 +124,16 @@
   padding-top: 20px;
 
   &::first-letter {
-    color: $pink;
+    // color: $pink;
+  }
+
+  span {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    span {
+      display: inline;
+    }
   }
 }

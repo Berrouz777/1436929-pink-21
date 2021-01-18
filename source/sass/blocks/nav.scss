@@ -1,25 +1,40 @@
 .nav {
-  padding: 20px 0 18px 0;
+  background-color: transparentize($color: $black, $amount: 0.7);
+  padding-top: 22px;
+
+  &--open-menu {
+    background-color: $dark-blu-sky;
+  }
 
   @media (min-width: $tablet-width) {
-    padding: 27px 0 13px 0;
+    padding-top: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    padding-bottom: 10px;
   }
 }
 
 .nav__container {
   @include container;
   display: flex;
-  flex-wrap: wrap;
+  align-items: center;
+  // flex-wrap: wrap;
   justify-content: space-between;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
-    min-height: 70px;
+    // min-height: 70px;
+    padding-bottom: 35px;
   }
 
   @media (min-width: $desktop-width) {
-    @include container-desktop;
-    max-width: 920px;
-    margin: 0 auto;
+    // @include container-desktop;
+    // max-width: 920px;
+    // margin: 0 auto;
+    margin-left: auto;
+    margin-right: 155px;
   }
 }
 
@@ -47,6 +62,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-left: -20px;
     &-desktop {
       display: block;
     }
@@ -63,12 +79,34 @@
 
 .nav__toggle {
   display: block;
-  margin-left: auto;
+  // margin-left: auto;
   height: 4px;
   width: 50px;
   border: none;
   border-radius: 2px;
   box-shadow: 0 10px 0 0 $white, 0 20px 0 0 $white;
+  margin-top: -25px;
+
+  &--closed {
+    box-shadow: none;
+    height: 3px;
+    width: 30px;
+    border-radius: none;
+    transform: rotate(45deg);
+    margin-right: -4px;
+    margin-top: -4px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 3px;
+      width: 30px;
+      background-color: $white;
+      transform: rotate(-90deg);
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 16px;
@@ -84,15 +122,31 @@
   display: none;
   // width: 100%;
 
+  &--open-menu {
+    display: block;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
-    margin-top: 20px;
+    margin-top: 4px;
+    margin-right: auto;
   }
 }
 
 .nav__item {
+  padding: 15px 0;
+  border-top: 1px solid darken($white, 15%);
+  border-bottom: 1px solid $black;
+  // outline: 1px solid green;
+
+  @media (min-width: $tablet-width) {
+    &:last-child {
+      padding-bottom: 18px;
+    }
+  }
   @media (min-width: $desktop-width) {
     margin-right: 79px;
+    border: none;
 
     &:last-child {
       margin-right: 0;

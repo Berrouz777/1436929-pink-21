@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 50px auto 0 auto;
+    margin: 65px auto 0 auto;
   }
 }
 
@@ -16,12 +16,13 @@
   @media (min-width: $tablet-width) {
     padding: 0;
     border: 2px solid $very-light-shade-grey-dif2;
+    border-radius: 3px;
     margin: 0 20px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0 auto;
-    max-width: 920px;
+    max-width: 940px;
   }
 }
 
@@ -48,7 +49,7 @@
   box-sizing: border-box;
   border: 2px solid $very-light-shade-grey-dif2;
   padding: 15px 20px;
-  min-height: 200px;
+  // min-height: 200px;
 
   &::placeholder {
     font-family: "Open Sans", "Arial", sans-serif;
@@ -60,5 +61,12 @@
     margin: 23px auto 45px auto;
     // height: 250px;
     width: 81%;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 18px;
+    padding-top: 13px;
+    height: 128px;
+    width: 87%;
   }
 }
