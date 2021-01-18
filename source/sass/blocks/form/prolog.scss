@@ -23,6 +23,7 @@
   @media (min-width: $desktop-width) {
     @include container;
     max-width: 920px;
+    padding: 90px 222px 70px 222px;
     margin: 0 auto;
   }
 }

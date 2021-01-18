@@ -1,5 +1,5 @@
 .footer__container {
-  @include container;
+  // @include container;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -12,9 +12,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    @include container-desktop;
+    // @include container-desktop;
     min-height: 197px;
-    max-width: 920px;
+    max-width: 940px;
     margin: 0 auto;
   }
 }
@@ -123,6 +123,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 40px;
+
     .htmlacademy {
       padding-top: 0;
     }
