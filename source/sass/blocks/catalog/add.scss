@@ -7,6 +7,10 @@
   @include container;
 }
 
+.add__photo {
+  width: 100%;
+}
+
 .add__list {
   @include list-style;
 

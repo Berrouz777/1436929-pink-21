@@ -6,4 +6,8 @@
   line-height: 30px;
   color: $dark-blu-sky;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
