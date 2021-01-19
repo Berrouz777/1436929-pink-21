@@ -1,5 +1,5 @@
 .module {
-  display: none;
+  // display: none;
   position: fixed;
   background-color: $white;
   box-shadow: 0 7px 15px 0 lighten($black, 85%);
@@ -28,6 +28,7 @@
 
   div:nth-child(2) {
     padding: 0 20px;
+    margin-top: 40px;
 
     @media (min-width: $tablet-width) {
       padding: 0 80px;
@@ -53,7 +54,7 @@
 }
 
 .module-thanks {
-  // display: none;
+  display: none;
   top: 190px;
 
   div:nth-child(2) {
