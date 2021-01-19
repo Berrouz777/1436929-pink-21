@@ -7,6 +7,14 @@
 .photos__main-photo {
   width: 100%;
   // margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    height: 509px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 506px;
+  }
 }
 
 .photos__item-photo {
