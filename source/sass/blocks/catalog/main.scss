@@ -1,0 +1,9 @@
+.main__header-text,
+.main__info-text {
+  @include container;
+
+  font-size: 14px;
+  line-height: 30px;
+  color: $dark-blu-sky;
+  text-align: center;
+}
