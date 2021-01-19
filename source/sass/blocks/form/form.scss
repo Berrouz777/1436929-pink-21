@@ -85,7 +85,7 @@
 .form__footer {
   @include container;
   padding-top: 42px;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 
   @media (min-width: $tablet-width) {
     display: flex;

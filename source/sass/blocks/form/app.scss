@@ -1,7 +1,7 @@
 .app {
   background-color: $grey;
   margin-top: 43px;
-  padding-top: 38px;
+  padding-top: 25px;
 
   @media (min-width: $tablet-width) {
     background-color: $white;
@@ -27,23 +27,28 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    display: inline-block;
+    position: absolute;
+    display: block;
     width: 360px;
-    margin: -10px auto 0 auto;
+    margin: -10px 105px 0 108px;
     background-color: $white;
 
     br {
       display: none;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin: -10px 50px 0 15px;
+  }
 }
 
 .app__list {
   @include list-style;
-  padding-top: 40px;
+  padding-top: 25px;
 
   @media (min-width: $tablet-width) {
-    padding: 50px 0 58px 37px;
+    padding: 57px 0 58px 37px;
   }
 
   @media (min-width: $desktop-width) {
