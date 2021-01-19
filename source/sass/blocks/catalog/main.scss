@@ -6,4 +6,20 @@
   line-height: 30px;
   color: $dark-blu-sky;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    // outline: 1px solid red;
+    padding: 0 100px;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    br {
+      display: inline;
+    }
+  }
 }
