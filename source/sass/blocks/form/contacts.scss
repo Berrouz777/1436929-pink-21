@@ -112,7 +112,7 @@
       order: 1;
     }
 
-    &-name[for=tel]::before {
+    &-name[for="tel"]::before {
       content: "";
       position: absolute;
       background-image: url("../../../img/contacts-icon-phone.svg");
@@ -125,7 +125,7 @@
       right: 2px;
     }
 
-    &-name[for=email]::before {
+    &-name[for="email"]::before {
       content: "";
       position: absolute;
       background-image: url("../../../img/contacts-icon-mail.svg");
@@ -151,7 +151,7 @@
       padding-left: 18px;
     }
 
-    &-name[for=email]::before {
+    &-name[for="email"]::before {
       top: 2px;
     }
   }

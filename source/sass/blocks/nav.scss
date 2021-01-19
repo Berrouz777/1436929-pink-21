@@ -63,6 +63,7 @@
 
   @media (min-width: $desktop-width) {
     margin-left: -20px;
+
     &-desktop {
       display: block;
     }
@@ -144,6 +145,7 @@
       padding-bottom: 18px;
     }
   }
+
   @media (min-width: $desktop-width) {
     margin-right: 79px;
     border: none;
