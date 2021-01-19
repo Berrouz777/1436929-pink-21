@@ -9,6 +9,11 @@
   // margin: 0 auto;
 }
 
+.photos__item-photo {
+  width: 100%;
+  // margin: 0 auto;
+}
+
 .photos__info {
   background-color: $grey;
   margin: 0;
@@ -17,11 +22,57 @@
   &-main {
     background-color: $grey;
     margin: -5px 20px 0 20px;
+
+    @media (min-width: $desktop-width) {
+      max-width: 940px;
+      margin: -5px auto 0 auto;
+    }
   }
 }
 
 .photos__container {
-  // padding-left: 20px;
+  padding-left: 17px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+    min-height: 155px;
+    display: flex;
+    flex-direction: column;
+    // flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &-main {
+    padding-left: 17px;
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      padding: 0 30px;
+
+      .photos__name {
+        grid-column: 1/2;
+        grid-row: 1/2;
+        // outline: 1px solid green;
+      }
+
+      .photos__text {
+        grid-column: 1/3;
+        grid-row: 2/3;
+        // outline: 1px solid green;
+        // margin: 0;
+      }
+
+      .photos__like {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        // outline: 1px solid green;
+        margin-left: auto;
+
+      }
+    }
+  }
 }
 
 .photos__name {
@@ -41,10 +92,14 @@
 .photos__text {
   font-size: 14px;
   color: $dark-blu-sky;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: auto;
+  }
 }
 
 .photos__like {
-  // display: block;
+  display: block;
   font-size: 12px;
   text-decoration: none;
   text-transform: uppercase;
@@ -53,13 +108,37 @@
 
 .photos__list {
   @include list-style;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
 }
 
 .photos__item {
   @include container;
-}
+  margin-top: 20px;
 
-.photos__item-photo {
-  width: 100%;
-  margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    width: 300px;
+
+    &:nth-child(2n) {
+      padding-left: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-right: 20px;
+
+    &:nth-child(3n) {
+      padding-right: 0;
+    }
+  }
 }
