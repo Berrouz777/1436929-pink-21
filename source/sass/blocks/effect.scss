@@ -113,7 +113,7 @@
   }
 
   &:active {
-    color: transparentize($color: $dark-blu-sky, $amount: 0.7)
+    color: transparentize($color: $dark-blu-sky, $amount: 0.7);
   }
 
   @media (min-width: $desktop-width) {

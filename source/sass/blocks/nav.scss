@@ -178,7 +178,7 @@
 
     &:active {
       a {
-        color:transparentize($color: $white, $amount: 0.7)
+        color: transparentize($color: $white, $amount: 0.7);
       }
     }
   }
