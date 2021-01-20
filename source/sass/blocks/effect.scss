@@ -108,6 +108,14 @@
   line-height: 24px;
   color: $pink;
 
+  &:hover {
+    color: $dark-blu-sky;
+  }
+
+  &:active {
+    color: transparentize($color: $dark-blu-sky, $amount: 0.7)
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;

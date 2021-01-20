@@ -15,7 +15,15 @@
   padding: 3px;
   border: none;
   border-radius: 50%;
-  background-color: lighten($dark-blu-sky, 30%);
+  background-color: transparentize($color: $dark-blu-sky, $amount: 0.7);
+
+  &:hover {
+    background-color: transparentize($color: $dark-blu-sky, $amount: 0.4);
+  }
+
+  &:active {
+    background-color: transparentize($color: $dark-blu-sky, $amount: 0.1);
+  }
 
   &--active {
     border: 3px solid $dark-blu-sky;

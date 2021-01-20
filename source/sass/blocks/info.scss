@@ -119,6 +119,15 @@
   text-decoration: none;
   text-align: center;
 
+  &:hover {
+    color: $dark-blu-sky;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: transparentize($color: $dark-blu-sky, $amount: 0.7)
+  }
+
   @media (min-width: $tablet-width) {
     margin-top: 5px;
   }
