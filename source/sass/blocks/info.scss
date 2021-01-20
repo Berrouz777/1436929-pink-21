@@ -59,14 +59,14 @@
 }
 
 .info__item {
-  margin-top: 10px;
+  margin-top: 8px;
 
   &:nth-child(2) {
     margin-top: 16px;
   }
 
   &:last-child {
-    margin-top: 22px;
+    margin-top: 20px;
   }
 
   @media (min-width: $tablet-width) {
@@ -130,17 +130,70 @@
 
 .info__map {
   display: block;
+  position: relative;
   margin: 35px auto 5px auto;
 
-  @media (min-width: $tablet-width) {
-    margin: 25px auto 5px auto;
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 1;
     width: 100%;
-    height: 374px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    clip-path: polygon(50% 16%, 0 0, 100% 0);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 16px;
+    top: 95px;
+    left: 44.5%;
+    border: 10px solid $white;
+    border-radius: 50%;
+    background-color: $pink;
+  }
+
+  &-img {
+    width: 100%;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 20px auto 0 auto;
+
+    &::after {
+      clip-path: polygon(50% 18%, 0 0, 100% 0);
+    }
+
+    &::before {
+      top: 194px;
+      left: 47.3%;
+    }
+
+    &-img {
+      height: 374px;
+    }
   }
 
   @media (min-width: $desktop-width) {
-    width: 100%;
-    height: 502px;
-    margin: 20px auto 5px auto;
+    margin: 20px auto -5px auto;
+
+    &::after {
+      clip-path: polygon(50% 20%, 0 0, 100% 0);
+    }
+
+    &::before {
+      top: 262px;
+      left: 48.5%;
+    }
+
+    &-img {
+      height: 502px;
+    }
   }
 }
