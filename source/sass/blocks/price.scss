@@ -8,22 +8,40 @@
 }
 
 .price {
+  position: relative;
   background-color: $grey;
-  margin-top: 75px;
+  padding-top: 105px;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $white;
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 10.5%);
+  }
 
   @media (min-width: $tablet-width) {
-    margin-top: 0;
-    padding-top: 55px;
-    padding-bottom: 70px;
+    margin-top: -15px;
+    padding-top: 98px;
+    padding-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 193px 20px 98px 20px;
+    margin-top: 0;
+    padding: 193px 20px 95px 20px;
+
+    &::before {
+      clip-path: polygon(0 0, 100% 0, 100% 6%, 0 24%);
+    }
   }
 }
 
 .price__container {
-  max-width: 960px;
+  max-width: 940px;
   margin: 0 auto;
 }
 
@@ -123,9 +141,11 @@
 }
 
 .price__heading {
+  position: relative;
   background-color: $dark-blu-sky;
-  padding-top: 14px;
+  padding-top: 10px;
   padding-bottom: 28px;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 10px;
@@ -140,6 +160,92 @@
   @media (min-width: $desktop-width) {
     padding-top: 15px;
     padding-bottom: 22px;
+  }
+}
+
+.price__row-heading {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 1;
+    height: 100px;
+    width: 2px;
+    top: 107px;
+    right: 22px;
+    background-color: $very-light-shade-grey-dif2;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    z-index: 1;
+    height: 100px;
+    width: 2px;
+    top: 107px;
+    left: 22px;
+    background-color: $very-light-shade-grey-dif2;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after,
+    &::before {
+      display: none;
+    }
+  }
+
+  .price__item--active {
+    &::before {
+      content: "хит";
+      display: block;
+      position: absolute;
+      z-index: 1;
+      font-size: 14px;
+      font-weight: normal;
+      text-transform: uppercase;
+      width: 100px;
+      height: 25px;
+      top: 15px;
+      left: -5px;
+      color: $white;
+      background-color: $pink;
+      transform: rotate(-45deg);
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 2;
+      width: 20px;
+      height: 50px;
+      top: 30px;
+      left: 0;
+      background-color: $dark-blu-sky;
+    }
+
+    @media (min-width: $tablet-width) {
+      &::after {
+        display: none;
+      }
+
+      &::before {
+        height: 22px;
+        top: 10px;
+        left: -30px;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      &::before {
+        width: 110px;
+        top: 20px;
+        left: -27px;
+      }
+    }
   }
 }
 
