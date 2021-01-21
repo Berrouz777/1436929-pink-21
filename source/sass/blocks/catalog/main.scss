@@ -17,6 +17,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-bottom: 70px;
+
     br {
       display: inline;
     }
@@ -33,5 +35,9 @@
     br {
       display: inline;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 43px;
   }
 }
