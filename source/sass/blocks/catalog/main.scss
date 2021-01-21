@@ -1,16 +1,15 @@
 .main__header-text,
 .main__info-text {
-  @include container;
-
   font-size: 14px;
   line-height: 30px;
   color: $dark-blu-sky;
   text-align: center;
+  padding: 30px 20px 35px 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     // outline: 1px solid red;
-    padding: 0 100px;
+    padding: 73px 100px 60px 100px;
 
     br {
       display: none;
@@ -18,6 +17,19 @@
   }
 
   @media (min-width: $desktop-width) {
+    br {
+      display: inline;
+    }
+  }
+}
+
+.main__info-text {
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 48px;
+    padding-bottom: 50px;
+
     br {
       display: inline;
     }

@@ -74,6 +74,16 @@
       <path
         d="M13.643.016L13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256zm0-11.564l-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237z" />
     </symbol>
+    <symbol id="crop" viewBox="0 0 44 44">
+      <path d="M32 28h4V12a4 4 0 00-4-4H16v4h16v16zm-20 4V0H8v8H0v4h8v20a4 4 0 004 4h20v8h4v-8h8v-4H12z" />
+    </symbol>
+    <symbol id="fill" viewBox="0 0 48 43">
+      <path
+        d="M33.12 17.88L15.24 0l-2.83 2.83 4.76 4.76L6.88 17.88a3 3 0 000 4.24l11 11a3 3 0 004.24 0l11-11a3 3 0 000-4.24zM10.41 20L20 10.42 29.59 20H10.41zM38 23s-4 4.33-4 7a4 4 0 108 0c0-2.67-4-7-4-7zM48 40H0v3h48v-3z" />
+    </symbol>
+    <symbol id="contrast" viewBox="0 0 32 32">
+      <path d="M16 4a12 12 0 110 24 12 12 0 010-24zm0-4a16 16 0 100 32 16 16 0 000-32zM16 24.29a8.52 8.52 0 000-17" />
+    </symbol>
   </svg>
 
   <header class="header-catalog header-catalog--open-men">
@@ -118,36 +128,45 @@
       ваших?</p>
     <section class="photos">
       <div class="photos__main">
-        <picture>
-          <source media="(min-width: 960px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
-          <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-          <img class="photos__main-photo" src="img/panorama.jpg" srcset="img/panorama@2x.jpg 2x" width="320"
-            height="137" alt="Панорама надвисного моста над рекой">
-        </picture>
+        <div class="photos__main-photo">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/panorama-desktop.jpg 1x, img/panorama-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/panorama-tablet.jpg 1x, img/panorama-tablet@2x.jpg 2x">
+            <img class="photos__main-photo-img" src="img/panorama.jpg" srcset="img/panorama@2x.jpg 2x" width="320"
+              height="137" alt="Панорама надвисного моста над рекой">
+          </picture>
+        </div>
         <blockquote class="photos__info-main">
           <div class="photos__container-main">
-            <cite class="photos__name">Анна <span>(5 минут назад)</span></cite>
-            <p class="photos__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в
-              перископе, задавайте свои вопросы!</p>
-            <a class="photos__like" href="#">Нравится: 215</a>
+            <cite class="photos__name photos__name-main">Анна <span>(5 минут назад)</span></cite>
+            <p class="photos__text photos__text-main">Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbsp;прямую трансляцию в перископе, задавайте свои вопросы!</p>
+            <a class="photos__like photos__like-main" href="#">Нравится: 215</a>
           </div>
         </blockquote>
       </div>
       <ul class="photos__list">
         <li class="photos__item">
-          <img class="photos__item-photo" src="https://via.placeholder.com/280x180" width="280" height="180"
-            alt="Съёмка белого автомобиля со штативом">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
+            <img class="photos__item-photo" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x"
+              width="280" height="180" alt="Съёмка белого автомобиля со штативом">
+          </picture>
           <blockquote class="photos__info">
             <div class="photos__container">
               <cite class="photos__name">Левон <span>(5 часов назад)</span></cite>
               <p class="photos__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <a class="photos__like" href="#">Нравится: 356</a>
+              <a class="photos__like" href="">Нравится: 356</a>
             </div>
           </blockquote>
         </li>
         <li class="photos__item">
-          <img class="photos__item-photo" src="https://via.placeholder.com/280x180" width="280" height="180"
-            alt="Барабанная установка с четырмя золотистыми тарелками и тремя барабанами">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
+            <img class="photos__item-photo" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x"
+              width="280" height="180" alt="Барабанная установка с четырмя золотистыми тарелками и тремя барабанами">
+          </picture>
           <blockquote class="photos__info">
             <div class="photos__container">
               <cite class="photos__name">Антон <span>(12 часов назад)</span>)</cite>
@@ -157,8 +176,13 @@
           </blockquote>
         </li>
         <li class="photos__item">
-          <img class="photos__item-photo" src="https://via.placeholder.com/280x180" width="280" height="180"
-            alt="Фото прозрачной стеклянной крыши, сделанное под углом в 90 градусов, за которой виднеется небо и верхушки зданий">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
+            <img class="photos__item-photo" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x"
+              width="280" height="180"
+              alt="Фото прозрачной стеклянной крыши, сделанное под углом в 90 градусов, за которой виднеется небо и верхушки зданий">
+          </picture>
           <blockquote class="photos__info">
             <div class="photos__container">
               <cite class="photos__name">Борис <span>(20 часов назад)</span>)</cite>
@@ -168,8 +192,12 @@
           </blockquote>
         </li>
         <li class="photos__item">
-          <img class="photos__item-photo" src="https://via.placeholder.com/280x180" width="280" height="180"
-            alt="Кубанская бачка (Что-то вроде рынка)">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
+            <img class="photos__item-photo" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x"
+              width="280" height="180" alt="Кубанская бачка (Что-то вроде рынка)">
+          </picture>
           <blockquote class="photos__info">
             <div class="photos__container">
               <cite class="photos__name">Сергей <span>(25 часов назад)</span></cite>
@@ -179,8 +207,12 @@
           </blockquote>
         </li>
         <li class="photos__item">
-          <img class="photos__item-photo" src="https://via.placeholder.com/280x180" width="280" height="180"
-            alt="Фото ног на фоте отвисной скалы">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-5-desktop.jpg 1x, img/photo-5-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg 1x, img/photo-5-tablet@2x.jpg 2x">
+            <img class="photos__item-photo" src="img/photo-5-mobile.jpg" srcset="img/photo-5-mobile@2x.jpg 2x"
+              width="280" height="180" alt="Фото ног на фоте отвисной скалы">
+          </picture>
           <blockquote class="photos__info">
             <div class="photos__container">
               <cite class="photos__name">Максим <span>(40 часов назад)</span></cite>
@@ -190,8 +222,12 @@
           </blockquote>
         </li>
         <li class="photos__item">
-          <img class="photos__item-photo" src="https://via.placeholder.com/280x180" width="280" height="180"
-            alt="Фото крыла самолета на фоне заката в небе">
+          <picture>
+            <source media="(min-width: 960px)" srcset="img/photo-6-desktop.jpg 1x, img/photo-6-desktop@2x.jpg 2x">
+            <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg 1x, img/photo-6-tablet@2x.jpg 2x">
+            <img class="photos__item-photo" src="img/photo-6-mobile.jpg" srcset="img/photo-6-mobile@2x.jpg 2x"
+              width="280" height="180" alt="Фото крыла самолета на фоне заката в небе">
+          </picture>
           <blockquote class="photos__info">
             <div class="photos__container">
               <cite class="photos__name">Надежда <span>(45 часов назад)</span></cite>
@@ -206,28 +242,37 @@
     <form class="add">
       <h2 class="visually-hidden">Выложить фото</h2>
       <div class="add__container">
-        <img class="add__photo" src="https://via.placeholder.com/280x374" width="280" height="374"
-          alt="Ясная снежная дорога с деревьями на обочине">
+        <img class="add__photo" src="img/photo-7-mobile.jpg" srcset="img/photo-7-mobile@2x.jpg 2x" width="280"
+          height="374" alt="Ясная снежная дорога с деревьями на обочине">
         <ul class="add__list">
           <li class="add__item">
-            <img class="add__item-img" src="https://via.placeholder.com/44x44" alt="Обрезать">
+            <svg class="add__item-img add__item-img-crop add__item-img--active" width="44" hieght="44">
+              <use xlink:href="#crop"></use>
+            </svg>
             <div class="add__range">
-              <div class="add__range-scale"></div>
-              <div class="add__range-bar"></div>
+              <div class="add__range-scale">
+                <div class="add__range-scale-bar add__range-scale-bar-crop"></div>
+              </div>
             </div>
           </li>
           <li class="add__item">
-            <img class="add__item-img" src="https://via.placeholder.com/44x44" alt="Заливка">
+            <svg class="add__item-img add__item-img-fill" width="48" hieght="43">
+              <use xlink:href="#fill"></use>
+            </svg>
             <div class="add__range">
-              <div class="add__range-scale"></div>
-              <div class="add__range-bar"></div>
+              <div class="add__range-scale">
+                <div class="add__range-scale-bar add__range-scale-bar-fill"></div>
+              </div>
             </div>
           </li>
           <li class="add__item">
-            <img class="add__item-img" src="https://via.placeholder.com/44x44" alt="Контраст">
+            <svg class="add__item-img add__item-img-contrast" width="32" hieght="32">
+              <use xlink:href="#contrast"></use>
+            </svg>
             <div class="add__range">
-              <div class="add__range-scale"></div>
-              <div class="add__range-bar"></div>
+              <div class="add__range-scale">
+                <div class="add__range-scale-bar add__range-scale-bar-contrast"></div>
+              </div>
             </div>
           </li>
         </ul>
