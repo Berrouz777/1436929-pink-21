@@ -68,6 +68,14 @@
     &-desktop {
       display: block;
       fill: $white;
+
+      &:hover {
+        fill: $pink;
+      }
+
+      &:active {
+        fill: transparentize($color: $white, $amount: 0.7);
+      }
     }
 
     &-pink {
@@ -154,6 +162,18 @@
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &:hover {
+      a {
+        color: $pink;
+      }
+    }
+
+    &:active {
+      a {
+        color: transparentize($color: $white, $amount: 0.7);
+      }
     }
   }
 }
