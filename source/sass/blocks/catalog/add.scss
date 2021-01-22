@@ -195,6 +195,10 @@
       border: 2px solid $pink;
       border-radius: 50%;
       background-color: $white;
+
+      &--active {
+        background-color: $pink;
+      }
     }
   }
 
@@ -214,6 +218,10 @@
     &-scale-bar {
       position: absolute;
       bottom: -5px;
+
+      &--active {
+        background-color: $white;
+      }
 
       &-crop {
         right: 40px;

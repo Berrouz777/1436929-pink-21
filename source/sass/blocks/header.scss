@@ -34,6 +34,10 @@
     background-image: url("../img/back-desktop.jpg");
     background-size: 100% 853px;
 
+    &--open-menu {
+      background-position: 0 0;
+    }
+
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-desktop@2x.jpg");
     }
@@ -76,6 +80,7 @@
       height: 394px;
       background-image: url("../img/back-desktop.jpg");
       background-size: 100% 853px;
+      background-position: 0 0;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/back-desktop@2x.jpg");
@@ -101,6 +106,7 @@
     max-width: 920px;
     margin: 0 auto;
     overflow: hidden;
+    margin-top: 5px;
   }
 
   &-form {
@@ -116,7 +122,7 @@
       @include container;
       max-width: 920px;
       margin: 0 auto;
-      padding-top: 8px;
+      padding-top: 10px;
     }
   }
 
@@ -126,11 +132,11 @@
     padding-bottom: 62px;
 
     @media (min-width: $tablet-width) {
-      padding-top: 170px;
+      padding-top: 22px;
     }
 
-    @media (min-width: $tablet-width) {
-      padding-top: 22px;
+    @media (min-width: $desktop-width) {
+      padding-top: 25px;
     }
   }
 }
