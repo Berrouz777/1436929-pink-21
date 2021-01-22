@@ -115,6 +115,6 @@
   }
 }
 
-.app__radio:checked+label::after {
+.app__radio:checked + label::after {
   display: block;
 }
