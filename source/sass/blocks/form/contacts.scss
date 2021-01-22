@@ -95,6 +95,14 @@
       font-family: "Open Sans", "Arial", sans-serif;
       color: $dark-blu-sky;
     }
+
+    &:hover {
+      border-color: $dark-blu-sky;
+    }
+
+    &:focus {
+      outline-color: $pink;
+    }
   }
 
   @media (min-width: $tablet-width) {

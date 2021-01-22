@@ -107,6 +107,16 @@
   box-shadow: 0 10px 0 0 $white, 0 20px 0 0 $white;
   margin-top: -25px;
 
+  &:hover {
+    background-color: $pink;
+    box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
+  }
+
+  &:active {
+    background-color: transparentize($color: $pink, $amount: 0.7);
+    box-shadow: 0 10px 0 0 transparentize($color: $pink, $amount: 0.7), 0 20px 0 0 transparentize($color: $pink, $amount: 0.7);
+  }
+
   &--closed {
     box-shadow: none;
     height: 3px;
@@ -125,6 +135,24 @@
       width: 30px;
       background-color: $white;
       transform: rotate(-90deg);
+    }
+
+    &:hover {
+      background-color: $pink;
+      box-shadow: none;
+
+      &::before {
+        background-color: $pink;
+      }
+    }
+
+    &:active {
+      background-color: transparentize($color: $pink, $amount: 0.7);
+      box-shadow: none;
+
+      &::before {
+        background-color: transparentize($color: $pink, $amount: 0.7);
+      }
     }
   }
 
@@ -214,6 +242,14 @@
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+
+  &:hover {
+    color: $pink;
+  }
+
+  &:active {
+    color: transparentize($color: $pink, $amount: 0.7);
+  }
 
   @media (min-width: $desktop-width) {
     line-height: 18px;
