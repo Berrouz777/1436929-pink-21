@@ -139,12 +139,22 @@
       <p class="header__slogan">Взгляните<br> на жизнь<br> иначе!</p>
       <div class="header__image">
         <picture>
+          <source type="image/webp" media="(min-width: 960px)"
+            srcset="img/webp/screen-desktop.webp 1x, img/webp/screen-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)"
+            srcset="img/webp/screen-tablet.webp 1x, img/webp/screen-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/webp/screen.webp 1x, img/webp/screen@2x.webp 2x">
           <source media="(min-width: 960px)" srcset="img/screen-desktop.jpg 1x, img/screen-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="img/screen-tablet.jpg 1x, img/screen-tablet@2x.jpg 2x">
           <img class="header__image-screen" src="img/screen.jpg" srcset="img/screen@2x.jpg 2x" width="111" height="197"
             alt="Розовый экран телефона">
         </picture>
         <picture>
+          <source type="image/webp" media="(min-width: 960px)"
+            srcset="img/webp/phone-desktop.webp 1x, img/webp/phone-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)"
+            srcset="img/webp/phone-tablet.webp 1x, img/webp/phone-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/webp/phone.webp 1x, img/webp/phone@2x.webp 2x">
           <source media="(min-width: 960px)" srcset="img/phone-desktop.png 1x, img/phone-desktop@2x.png 2x">
           <source media="(min-width: 660px)" srcset="img/phone-tablet.png 1x, img/phone-tablet@2x.png 2x">
           <img class="header__image-head" src="img/phone.png" srcset="img/phone@2x.png 2x" width="320" height="286"
@@ -176,22 +186,34 @@
         <h2 class="visually-hidden">Польза приложения</h2>
         <ul class="advantages__list">
           <li class="advantages__item">
+            <picture>
+              <source type="image/webp"
+                srcset="img/webp/advantages-1.webp 1x, img/webp/advantages-1@2x.webp 2x">
             <img class="advantages__item-img" src="img/advantages-1.png" srcset="img/advantages-1@2x.png 2x" width="186"
               height="382" alt="Телефон с серым экраном и мусоркой на картинке">
+              </picture>
             <h3 class="advantages__item-heading">Поднимает настроение</h3>
             <p class="advantages__item-text">Приложение позволит вам победить осеннюю хандру и&nbsp;депрессию буквально
               в несколько кликов!</p>
           </li>
           <li class="advantages__item">
+            <picture>
+            <source type="image/webp"
+                srcset="img/webp/advantages-2.webp 1x, img/webp/advantages-2@2x.webp 2x">
             <img class="advantages__item-img" src="img/advantages-2.png" srcset="img/advantages-2@2x.png 2x" width="186"
               height="382" alt="Телефон с розовым экраном и мусоркой на картинке">
+              </picture>
             <h3 class="advantages__item-heading">Меняет мир вокруг</h3>
             <p class="advantages__item-text">Сделайте снимок и <br class="br-1">украсьте его смайликом<br class="br-2">
               или текстовой подписью,<br class="br-4"> чтобы<br class="br-5"> усилить&nbsp;эффект</p>
           </li>
           <li class="advantages__item">
-            <img class="advantages__item-img" src="img/advantages-3.png" srcset="img/advantages-3@2x.png 2x" width="186"
-              height="382" alt="Телефон с розовым экраном и надписью &laquo;Всем привет!&raquo;">
+            <picture>
+              <source type="image/webp"
+                srcset="img/webp/advantages-3.webp 1x, img/webp/advantages-3@2x.webp 2x">
+              <img class="advantages__item-img" src="img/advantages-3.png" srcset="img/advantages-3@2x.png 2x"
+                width="186" height="382" alt="Телефон с розовым экраном и надписью &laquo;Всем привет!&raquo;">
+            </picture>
             <h3 class="advantages__item-heading">Заводит<br> новых друзей</h3>
             <p class="advantages__item-text">Ставьте лайки,<br class="br-6"> комментируйте, делитесь фотографиями с
               друзьями <br class="br-7">и заводите новых</p>
@@ -199,6 +221,9 @@
         </ul>
         <div class="advantages__img">
           <picture>
+            <source type="image/webp" media="(min-width: 660px)"
+              srcset="img/webp/advantages-tablet.webp 1x, img/webp/advantages-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/webp/advantages.webp 1x, img/webp/advantages@2x.webp 2x">
             <source media="(min-width: 660px)" srcset="img/advantages-tablet.png 1x, img/advantages-tablet@2x.png 2x">
             <img class="advantages__img-phone" src="img/advantages.png" srcset="img/advantages@2x.png 2x" width="157"
               height="320" alt="Телефон с надписью &laquo;Всем привет!&raquo;">
@@ -353,6 +378,8 @@
               <p class="price__item-name">Комментарии</p>
               <svg class="price__item-icon" width="27" height="27">
                 <use xlink:href="#no"></use>
+              </svg><svg class="price__item-icon" width="27" height="27">
+                <use xlink:href="#no"></use>
               </svg>
             </td>
             <td class="price__item price__item--active slider__item">
@@ -399,6 +426,11 @@
       </div>
       <div class="info__map">
         <picture>
+          <source type="image/webp" media="(min-width: 960px)"
+            srcset="img/webp/map-desktop.webp 1x, img/webp/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 660px)"
+            srcset="img/webp/map-tablet.webp 1x, img/webp/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/webp/map.webp 1x, img/webp/map@2x.webp 2x">
           <source media="(min-width: 960px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
           <source media="(min-width: 660px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x.jpg 2x">
           <img class="info__map-img" src="img/map.jpg" srcset="img/map@2x.jpg 2x" width="320" height="200"
