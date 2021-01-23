@@ -21,7 +21,6 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 75px;
-    // width: 296px;
     margin: 0 auto;
   }
 
@@ -36,10 +35,8 @@
 
   div:nth-child(2) {
     padding: 0 20px;
-    margin-top: 40px;
-    outline: 1px solid black;
     max-width: 280px;
-    margin: 0 auto;
+    margin: 40px auto 0 auto;
 
 
     @media (min-width: $tablet-width) {
@@ -59,7 +56,7 @@
   .module__button {
     margin-top: 25px;
     margin-bottom: 52px;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 
     @media (min-width: $tablet-width) {
       padding-bottom: 15px;
@@ -93,7 +90,7 @@
   }
 
   .module__button {
-    padding-bottom: 45px;
+    padding-bottom: 17px;
 
     @media (min-width: $tablet-width) {
       padding-bottom: 15px;
