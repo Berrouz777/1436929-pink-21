@@ -1,16 +1,18 @@
 .module {
-  // display: none;
   position: fixed;
   background-color: $white;
   box-shadow: 0 7px 15px 0 lighten($black, 85%);
+  width: 100%;
 
   @media (min-width: $tablet-width) {
+    border-radius: 5px;
     width: 460px;
-    left: 25%;
+    margin: 0 100px;
   }
 
   @media (min-width: $desktop-width) {
     width: 780px;
+    margin: 0 210px;
   }
 }
 
@@ -18,7 +20,12 @@
   @include container;
 
   @media (min-width: $tablet-width) {
-    padding: 0 80px;
+    padding: 0 75px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 170px;
   }
 }
 
@@ -28,34 +35,42 @@
 
   div:nth-child(2) {
     padding: 0 20px;
-    margin-top: 40px;
+    max-width: 280px;
+    margin: 40px auto 0 auto;
+
 
     @media (min-width: $tablet-width) {
       padding: 0 80px;
+      margin-top: 35px;
+      max-width: 300px;
     }
 
     @media (min-width: $desktop-width) {
       background-color: $grey;
-      margin-top: 33px;
+      margin-top: 65px;
       padding: 50px 20px;
+      max-width: 100%;
     }
   }
 
   .module__button {
     margin-top: 25px;
     margin-bottom: 52px;
-    padding-bottom: 45px;
+    padding-bottom: 15px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 15px;
+    }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 0;
-      margin-top: 0;
+      margin: 0 auto;
     }
   }
 }
 
 .module-thanks {
   display: none;
-  top: 190px;
+  top: 230px;
 
   div:nth-child(2) {
     background-color: $grey;
@@ -63,15 +78,25 @@
     padding: 50px 20px;
 
     @media (min-width: $tablet-width) {
-      padding: 50px 80px;
+      margin-top: 30px;
+      padding: 50px 80px 50px 80px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 40px;
     }
   }
 
   .module__button {
-    padding-bottom: 45px;
+    padding-bottom: 17px;
+
+    @media (min-width: $tablet-width) {
+      padding-bottom: 15px;
+    }
 
     @media (min-width: $desktop-width) {
       max-width: 456px;
+      margin: 0 auto;
     }
   }
 }
@@ -82,6 +107,7 @@
   padding-top: 28px;
 
   @media (min-width: $tablet-width) {
+    padding-top: 10px;
     font-size: 30px;
     line-height: 40px;
   }
@@ -95,6 +121,8 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
+    padding-top: 0;
+    margin-top: -8px;
   }
 
   @media (min-width: $desktop-width) {

@@ -148,7 +148,7 @@
     top: 0;
     left: 0;
     background-color: $white;
-    border: 3px solid $very-light-shade-grey-dif2;
+    border: 2px solid $very-light-shade-grey-dif2;
     border-radius: 2px;
   }
 
@@ -161,6 +161,18 @@
     background-image: url("../../../img/tick.svg");
     top: 10px;
     left: 9px;
+  }
+
+  &:hover {
+    &::before {
+      border-color: $dark-blu-sky;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: $pink;
+    }
   }
 
   @media (min-width: $tablet-width) {

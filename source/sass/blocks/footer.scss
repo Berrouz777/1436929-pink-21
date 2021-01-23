@@ -53,6 +53,15 @@
 
     &-desktop {
       display: block;
+      fill: $dark-blu-sky;
+
+      &:hover {
+        fill: $pink;
+      }
+
+      &:active {
+        fill: transparentize($color: $dark-blu-sky, $amount: 0.3);
+      }
     }
   }
 }
@@ -82,9 +91,7 @@
     margin-right: 0;
   }
 
-  .twitter,
-  .facebook,
-  .youtube {
+  svg {
     fill: $pink;
   }
 
@@ -96,6 +103,18 @@
     align-items: center;
     border: 3px solid transparentize($color: $dark-blu-sky, $amount: 0.9);
     border-radius: 50%;
+
+    &:hover {
+      border-color: transparentize($color: $dark-blu-sky, $amount: 0);
+    }
+
+    &:active {
+      border-color: transparentize($color: $dark-blu-sky, $amount: 0.9);
+
+      svg {
+        fill: transparentize($color: $pink, $amount: 0.7);
+      }
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -112,6 +131,18 @@
 
   .htmlacademy {
     fill: $pink;
+  }
+
+  &:hover {
+    .htmlacademy {
+      fill: $dark-blu-sky;
+    }
+  }
+
+  &:active {
+    .htmlacademy {
+      fill: transparentize($color: $dark-blu-sky, $amount: 0.7);
+    }
   }
 
   @media (min-width: $tablet-width) {

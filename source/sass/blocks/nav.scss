@@ -4,15 +4,24 @@
 
   &--open-menu {
     background-color: $dark-blu-sky;
+    margin-bottom: -3px;
   }
 
   @media (min-width: $tablet-width) {
     padding-top: 27px;
+
+    &--open-menu {
+      margin-bottom: 2px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
     padding-bottom: 5px;
+
+    &--open-menu {
+      background-color: transparentize($color: $black, $amount: 0.7);
+    }
   }
 }
 
@@ -98,6 +107,16 @@
   box-shadow: 0 10px 0 0 $white, 0 20px 0 0 $white;
   margin-top: -25px;
 
+  &:hover {
+    background-color: $pink;
+    box-shadow: 0 10px 0 0 $pink, 0 20px 0 0 $pink;
+  }
+
+  &:active {
+    background-color: transparentize($color: $pink, $amount: 0.7);
+    box-shadow: 0 10px 0 0 transparentize($color: $pink, $amount: 0.7), 0 20px 0 0 transparentize($color: $pink, $amount: 0.7);
+  }
+
   &--closed {
     box-shadow: none;
     height: 3px;
@@ -117,10 +136,32 @@
       background-color: $white;
       transform: rotate(-90deg);
     }
+
+    &:hover {
+      background-color: $pink;
+      box-shadow: none;
+
+      &::before {
+        background-color: $pink;
+      }
+    }
+
+    &:active {
+      background-color: transparentize($color: $pink, $amount: 0.7);
+      box-shadow: none;
+
+      &::before {
+        background-color: transparentize($color: $pink, $amount: 0.7);
+      }
+    }
   }
 
   @media (min-width: $tablet-width) {
     margin-top: -6px;
+
+    &--closed {
+      margin-bottom: -12px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -135,6 +176,14 @@
 
   &--open-menu {
     display: block;
+    padding-top: 5px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &--open-menu {
+      padding-top: 0;
+      margin-top: -5px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -146,7 +195,7 @@
 
 .nav__item {
   padding: 15px 0;
-  border-top: 1px solid darken($white, 15%);
+  border-top: 1px solid transparentize($color: $white, $amount: 0.85);
   border-bottom: 1px solid $black;
   // outline: 1px solid green;
 
@@ -193,6 +242,14 @@
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
+
+  &:hover {
+    color: $pink;
+  }
+
+  &:active {
+    color: transparentize($color: $pink, $amount: 0.7);
+  }
 
   @media (min-width: $desktop-width) {
     line-height: 18px;

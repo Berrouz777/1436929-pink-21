@@ -98,6 +98,18 @@
     background-color: $pink;
   }
 
+  &:hover {
+    &::before {
+      border-color: $dark-blu-sky;
+    }
+  }
+
+  &:active {
+    &::before {
+      border-color: $pink;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     padding-left: 62px;
   }

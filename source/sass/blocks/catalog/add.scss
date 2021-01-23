@@ -120,8 +120,16 @@
   fill: transparentize($color: $dark-blu-sky, $amount: 0.7);
   // outline: 1px solid black;
 
+  &:hover {
+    fill: transparentize($color: $dark-blu-sky, $amount: 0.5);
+  }
+
   &--active {
     fill: $pink;
+
+    &:hover {
+      fill: $pink;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -146,6 +154,10 @@
       margin-left: 12px;
       width: 16px;
       height: 16px;
+    }
+
+    &:hover {
+      fill: $pink;
     }
   }
 
@@ -195,6 +207,10 @@
       border: 2px solid $pink;
       border-radius: 50%;
       background-color: $white;
+
+      &--active {
+        background-color: $pink;
+      }
     }
   }
 
@@ -214,6 +230,10 @@
     &-scale-bar {
       position: absolute;
       bottom: -5px;
+
+      &--active {
+        background-color: $white;
+      }
 
       &-crop {
         right: 40px;
@@ -267,10 +287,29 @@
     border-radius: 40px;
     padding: 15px 0 15px 0;
     margin-bottom: 12px;
+    cursor: pointer;
 
-    &:disabled {
+    &:hover {
+      color: $white;
+      background-color: $pink;
+    }
+
+    &:active {
+      color: transparentize($color: $white, $amount: 0.7);
+    }
+
+    &-cancel {
       color: transparentize($color: $dark-blu-sky, $amount: 0.9);
       border-color: transparentize($color: $dark-blu-sky, $amount: 0.9);
+
+      &:hover {
+        color: transparentize($color: $dark-blu-sky, $amount: 0.7);
+        border-color: transparentize($color: $dark-blu-sky, $amount: 0.7);
+      }
+
+      &:active {
+        background-color: transparentize($color: $dark-blu-sky, $amount: 0.7);
+      }
     }
   }
 

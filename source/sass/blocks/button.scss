@@ -13,4 +13,17 @@
   padding: 17px 0;
   // margin: 0 auto;
   text-transform: uppercase;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $green-hover;
+  }
+
+  &:active {
+    color: transparentize($color: $white, $amount: 0.7);
+  }
+
+  &:disabled {
+    background-color: $very-light-shade-grey-dif2;
+  }
 }

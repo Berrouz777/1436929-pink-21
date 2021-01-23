@@ -126,6 +126,7 @@
       height: 41px;
       background-color: transparent;
       border: none;
+      cursor: pointer;
     }
   }
 
@@ -146,5 +147,13 @@
 
   &-svg {
     opacity: 0.3;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
   }
 }
