@@ -1,7 +1,7 @@
 .module {
   position: fixed;
   background-color: $white;
-  box-shadow: 0 7px 15px 0 lighten($black, 85%);
+  box-shadow: 0 7px 15px 0 transparentize($color: $black, $amount: 0.85);
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -69,7 +69,7 @@
 }
 
 .module-thanks {
-  display: none;
+  // display: none;
   top: 230px;
 
   div:nth-child(2) {

@@ -118,3 +118,7 @@
 .app__radio:checked + label::after {
   display: block;
 }
+
+.app__radio:disabled + label::before {
+  background-color: $grey;
+}

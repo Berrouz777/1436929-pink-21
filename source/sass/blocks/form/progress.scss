@@ -202,3 +202,7 @@
 .progress__checkbox:checked + label::after {
   display: block;
 }
+
+.progress__checkbox:disabled + label::before {
+  background-color: $grey;
+}
