@@ -8,7 +8,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet"> -->
   <link href="css/style.min.css" rel="stylesheet">
-  <link rel="preload" href="fonts/opensans.woff2" as="font"><link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
+  <link rel="preload" href="fonts/opensans.woff2" as="font">
 </head>
 
 <body class="page__body">
@@ -162,16 +163,22 @@
             alt="Рука, держащая телефон">
         </picture>
       </div>
-      <a class="header__button-download" href="#" download="">Скачать приложение</a>
+      <a class="header__button-download" href="https://www.apple.com/ru/app-store" download="">Скачать приложение</a>
       <ul class="header__icons-list">
         <li class="header__icons-item">
-          <img src="img/apple-logo.svg" width="47" height="56" alt="Иконка iPhone">
+          <a href="https://www.apple.com/ru/app-store/">
+            <img src="img/apple-logo.svg" width="47" height="56" alt="Иконка iPhone">
+          </a>
         </li>
         <li class="header__icons-item">
-          <img src="img/android-logo.svg" width="43" height="47" alt="Иконка Android">
+          <a href="https://play.google.com/store?hl=ru&gl=US">
+            <img src="img/android-logo.svg" width="43" height="47" alt="Иконка Android">
+          </a>
         </li>
         <li class="header__icons-item">
-          <img src="img/microsoft-logo.svg" width="44" height="41" alt="Иконка Windows Phone">
+          <a href="https://www.microsoft.com/ru-ru/store/apps/windows">
+            <img src="img/microsoft-logo.svg" width="44" height="41" alt="Иконка Windows Phone">
+          </a>
         </li>
       </ul>
       <p class="header__info">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
@@ -188,30 +195,27 @@
         <ul class="advantages__list">
           <li class="advantages__item">
             <picture>
-              <source type="image/webp"
-                srcset="img/advantages-1.webp 1x, img/advantages-1@2x.webp 2x">
-            <img class="advantages__item-img" src="img/advantages-1.png" srcset="img/advantages-1@2x.png 2x" width="186"
-              height="382" alt="Телефон с серым экраном и мусоркой на картинке">
-              </picture>
+              <source type="image/webp" srcset="img/advantages-1.webp 1x, img/advantages-1@2x.webp 2x">
+              <img class="advantages__item-img" src="img/advantages-1.png" srcset="img/advantages-1@2x.png 2x"
+                width="186" height="382" alt="Телефон с серым экраном и мусоркой на картинке">
+            </picture>
             <h3 class="advantages__item-heading">Поднимает настроение</h3>
             <p class="advantages__item-text">Приложение позволит вам победить осеннюю хандру и&nbsp;депрессию буквально
               в несколько кликов!</p>
           </li>
           <li class="advantages__item">
             <picture>
-            <source type="image/webp"
-                srcset="img/advantages-2.webp 1x, img/advantages-2@2x.webp 2x">
-            <img class="advantages__item-img" src="img/advantages-2.png" srcset="img/advantages-2@2x.png 2x" width="186"
-              height="382" alt="Телефон с розовым экраном и мусоркой на картинке">
-              </picture>
+              <source type="image/webp" srcset="img/advantages-2.webp 1x, img/advantages-2@2x.webp 2x">
+              <img class="advantages__item-img" src="img/advantages-2.png" srcset="img/advantages-2@2x.png 2x"
+                width="186" height="382" alt="Телефон с розовым экраном и мусоркой на картинке">
+            </picture>
             <h3 class="advantages__item-heading">Меняет мир вокруг</h3>
             <p class="advantages__item-text">Сделайте снимок и <br class="br-1">украсьте его смайликом<br class="br-2">
               или текстовой подписью,<br class="br-4"> чтобы<br class="br-5"> усилить&nbsp;эффект</p>
           </li>
           <li class="advantages__item">
             <picture>
-              <source type="image/webp"
-                srcset="img/advantages-3.webp 1x, img/advantages-3@2x.webp 2x">
+              <source type="image/webp" srcset="img/advantages-3.webp 1x, img/advantages-3@2x.webp 2x">
               <img class="advantages__item-img" src="img/advantages-3.png" srcset="img/advantages-3@2x.png 2x"
                 width="186" height="382" alt="Телефон с розовым экраном и надписью &laquo;Всем привет!&raquo;">
             </picture>
