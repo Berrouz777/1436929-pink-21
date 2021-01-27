@@ -206,3 +206,7 @@
 .progress__checkbox:disabled + label::before {
   background-color: $grey;
 }
+
+.progress__checkbox:focus + label::before {
+  outline: 2px solid $pink;
+}

@@ -122,3 +122,7 @@
 .app__radio:disabled + label::before {
   background-color: $grey;
 }
+
+.app__radio:focus + label::before {
+  outline: 2px solid $pink;
+}
